@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <globalConfiguration>
+  <parameter name="adminPassword" value="admin"/>
+  <parameter name="attachments.Directory" value="D:\Brian\Java\Tomcat\jakarta-tomcat-5.0.19\webapps\ProjectServer\WEB-INF\attachments"/>
+  <parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <parameter name="sendXsiTypes" value="true"/>
+  <parameter name="sendMultiRefs" value="true"/>
+  <parameter name="sendXMLDeclaration" value="true"/>
+  <parameter name="axis.sendMinimizedElements" value="false"/>
+  <requestFlow>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="session"/>
+   </handler>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="request"/>
+    <parameter name="extension" value=".jwr"/>
+   </handler>
+  </requestFlow>
+ </globalConfiguration>
+ <handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <!--<service name="AdminService" provider="java:MSG">
+  <parameter name="allowedMethods" value="AdminService"/>
+  <parameter name="enableRemoteAdmin" value="false"/>
+  <parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+ </service>
+ <service name="Version" provider="java:RPC">
+  <parameter name="allowedMethods" value="getVersion"/>
+  <parameter name="className" value="org.apache.axis.Version"/>
+ </service>-->
+ 
+ 
+ <service name="AccountManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addAccount dropAccount modifyAccount getAccount getAccountFromUsername getAllAccounts getAllAccountsForProject modifyAccountSettings getAccountSettings modifyAccountProfile getAccountProfile addAccountContact dropAccountContact modifyAccountContact getAccountContact"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.accountManager.AccountManager"/>
+  
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+
+
+ <service name="AnnouncementManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addAnnouncement dropAnnouncement modifyAnnouncement getAnnouncement getAllAnnouncementsForProject"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.announcementManager.AnnouncementManager"/>
+  
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ 
+ <service name="AttachmentManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addBinaryAttachment dropBinaryAttachment modifyBinaryAttachment getBinaryAttachment getAllBinaryAttachmentsForObject createObjectAttachment dropObjectAttachment modifyObjectAttachment getObjectAttachment getAllObjectAttachmentsForObject" />
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.attachmentManager.AttachmentManager"/>
+  
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+
+ 
+ <service name="CommentManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addComment dropComment modifyComment getCommentsForObject"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.commentManager.CommentManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ 
+ <service name="DiscussionManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addDiscussion dropDiscussion getDiscussion getAllDiscussionsForProject"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.discussionManager.DiscussionManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+   
+   
+ <service name="DocumentManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addDocument dropDocument modifyDocument getDocumentDeep getDocumentShallow getAllDocumentsDeep getAllDocumentsShallow getAllDocumentsForProject getAllDocumentsForProjectDeep getAllDocumentsForProjectShallow addCommentForDocument getCommentsForDocument getDocumentsForProjectFromDocumentType getDocumentsForProjectFromDocumentTypeDeep getDocumentsForProjectFromDocumentTypeShallow"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.documentManager.DocumentManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ 
+ <service name="EventLogManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="getEventLogsForAccount getEventLogsForProject getEventLogsFromQueryString getAllEventLogs"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.logging.eventlogManager.EventLogManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+    
+ 
+ <service name="ForumManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addForum dropForum modifyForum getForum getAllForumsForProject addForumReply getAllRepliesForForum"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.forumManager.ForumManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ 
+ <service name="MeetingManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addMeeting dropMeeting modifyMeeting getMeeting getAllMeetings getAllMeetingsForProject addCommentForMeeting getCommentsForMeeting"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.meetingManager.MeetingManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+
+ 
+ <service name="NamedFieldTemplateManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addNamedFieldTemplate dropNamedFieldTemplate modifyNamedFieldTemplate getNamedFieldTemplate getAllNamedFieldTemplatesForProjectAndType"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.namedFieldTemplateManager.NamedFieldTemplateManager"/>  
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+
+ <service name="NotificationManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addNotification dropNotification modifyNotification getNotification getAllNotifications getAllNotificationsForProject getAllNotificationsForAccount getAllNotificationsForAccountProject getAllNotificationsForAccountProjectObject"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.notificationManager.NotificationManager"/>  
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ 
+ <service name="ProjectManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addProject dropProject modifyProject getProject getAllProjects getAllProjectsForAccount"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.projectManager.ProjectManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+
+
+ <service name="RecentChangesManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="getRecentChangesForProject"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.recentChangesManager.RecentChangesManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+
+ <service name="ScheduleManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addSchedule dropSchedule modifySchedule getSchedule getAllSchedulesForProject addCommentForSchedule getCommentsForSchedule addCommentForScheduleItem getCommentsForScheduleItem"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.scheduleManager.ScheduleManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ <service name="SessionManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="getSession getAccountForSession closeSession setCurrentProjectForSession getActiveSessions"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.sessionManager.SessionManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ <service name="SystemManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="getServerIpAddr getServerPort"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.systemManager.SystemManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ <service name="TaskManager" provider="java:ROUNDTABLE">
+  <parameter name="allowedMethods" value="addTask dropTask modifyTask getTask getAllTasks getAllTasksForProject addTaskStatus dropTaskStatus modifyTaskStatus getTaskStatus getAllTaskStatusForProject addCommentForTask getCommentsForTask addCustomFieldForTask getAllCustomFieldsForTask addCustomFieldCollectionForTask getAllCustomFieldCollectionsForTask"/>
+  <parameter name="className" value="com.dommoni.roundtable.projectServer.services.taskManager.TaskManager"/>
+   
+  <requestFlow>
+  	<handler type="java:com.dommoni.roundtable.projectServer.sessions.axis.SessionHandler" />
+  </requestFlow>
+ </service>
+ 
+ <transport name="http">
+  <requestFlow>
+   <handler type="URLMapper"/>
+   <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </requestFlow>
+ </transport>
+ 
+ <transport name="local">
+  <responseFlow>
+   <handler type="LocalResponder"/>
+  </responseFlow>
+ </transport>
+ 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Account" type="java:com.dommoni.roundtable.Account" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:AccountSettings" type="java:com.dommoni.roundtable.AccountSettings" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:AccountProfile" type="java:com.dommoni.roundtable.AccountProfile" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:AccountContact" type="java:com.dommoni.roundtable.AccountContact" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Announcement" type="java:com.dommoni.roundtable.Announcement" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:BinaryAttachment" type="java:com.dommoni.roundtable.BinaryAttachment" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Comment" type="java:com.dommoni.roundtable.Comment" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:CommentAttachment" type="java:com.dommoni.roundtable.CommentAttachment" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:CustomField" type="java:com.dommoni.roundtable.CustomField" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:CustomFieldAttribute" type="java:com.dommoni.roundtable.CustomFieldAttribute" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:CustomFieldValueWrapper" type="java:com.dommoni.roundtable.CustomFieldValueWrapper" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:CustomFieldValueWrapperInt" type="java:com.dommoni.roundtable.CustomFieldValueWrapperInt" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:CustomFieldValueWrapperString" type="java:com.dommoni.roundtable.CustomFieldValueWrapperString" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Discussion" type="java:com.dommoni.roundtable.Discussion" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:DiscussionMessage" type="java:com.dommoni.roundtable.DiscussionMessage" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Document" type="java:com.dommoni.roundtable.Document" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:EventLogEntry" type="java:com.dommoni.roundtable.logging.EventLogEntry" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Forum" type="java:com.dommoni.roundtable.Forum" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:ForumReply" type="java:com.dommoni.roundtable.ForumReply" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Meeting" type="java:com.dommoni.roundtable.Meeting" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:MeetingAgendaItem" type="java:com.dommoni.roundtable.MeetingAgendaItem" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:MeetingFollowupItem" type="java:com.dommoni.roundtable.MeetingFollowupItem" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:MeetingNoteItem" type="java:com.dommoni.roundtable.MeetingNoteItem" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:NamedFieldCollection" type="java:com.dommoni.roundtable.NamedFieldCollection" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:NamedFieldTemplate" type="java:com.dommoni.roundtable.NamedFieldTemplate" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:NamedTemplateFieldDefinition" type="java:com.dommoni.roundtable.NamedTemplateFieldDefinition" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:Notification" type="java:com.dommoni.roundtable.Notification" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://www.dommoni.com/ROUNDTABLE" qname="ns1:ObjectAttachment" type="java:com.dommoni.roundtable.ObjectAttachment" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:Project" type="java:com.dommoni.roundtable.Project" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:RecentChange" type="java:com.dommoni.roundtable.RecentChange" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />  
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:Schedule" type="java:com.dommoni.roundtable.Schedule" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />  
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:ScheduleItem" type="java:com.dommoni.roundtable.ScheduleItem" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />  
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:Session" type="java:com.dommoni.roundtable.Session" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:SessionLogEntry" type="java:com.dommoni.roundtable.logging.SessionLogEntry" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" /> 
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:Task" type="java:com.dommoni.roundtable.Task" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:TaskReminder" type="java:com.dommoni.roundtable.TaskReminder" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+ <typeMapping encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://www.dommoni.com/ROUNDTABLE" qname="ns2:TaskStatus" type="java:com.dommoni.roundtable.TaskStatus" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" />
+</deployment>

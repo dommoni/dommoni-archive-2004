@@ -1,0 +1,10 @@
+create table `meetings` (`id` INT NOT NULL AUTO_INCREMENT, 
+						 `project_id` INT NOT NULL, 
+						 `title` VARCHAR(255),
+						 `description` TEXT,
+						 `start_time` TIMESTAMP, 
+						 `end_time` TIMESTAMP, 
+						 `meeting_notes` TEXT,
+						 `created_by` INT NOT NULL,
+						 `created_on` TIMESTAMP NOT NULL,
+						 PRIMARY KEY(`id`), INDEX(`id`))

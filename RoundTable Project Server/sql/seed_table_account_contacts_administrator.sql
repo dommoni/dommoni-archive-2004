@@ -1,0 +1,1 @@
+insert into `account_contacts` (`account_id`) values (1)

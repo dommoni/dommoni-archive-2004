@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL Send", "SL Send\SL Send.csproj", "{8DC34300-C957-4CEA-A20F-01E74C278B81}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL Send Exec", "SL Send Exec\SL Send Exec.csproj", "{E5673DC6-09F9-4EB5-A82E-0978DC592FB6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAddin", "ExcelAddin\ExcelAddin.csproj", "{73D5B526-2941-4BE4-913A-4DDDAB0B1E8F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ExcelAddinSetup", "ExcelAddin\ExcelAddinSetup\ExcelAddinSetup.vdproj", "{77B60969-E66F-4A7C-813B-3E5076D1C207}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SLSendExecSetup", "SLSendExecSetup\SLSendExecSetup.vdproj", "{D16F6595-9AA9-4898-B504-EC77A820574F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8DC34300-C957-4CEA-A20F-01E74C278B81}.Debug.ActiveCfg = Debug|.NET
+		{8DC34300-C957-4CEA-A20F-01E74C278B81}.Debug.Build.0 = Debug|.NET
+		{8DC34300-C957-4CEA-A20F-01E74C278B81}.Release.ActiveCfg = Release|.NET
+		{8DC34300-C957-4CEA-A20F-01E74C278B81}.Release.Build.0 = Release|.NET
+		{E5673DC6-09F9-4EB5-A82E-0978DC592FB6}.Debug.ActiveCfg = Debug|.NET
+		{E5673DC6-09F9-4EB5-A82E-0978DC592FB6}.Debug.Build.0 = Debug|.NET
+		{E5673DC6-09F9-4EB5-A82E-0978DC592FB6}.Release.ActiveCfg = Release|.NET
+		{E5673DC6-09F9-4EB5-A82E-0978DC592FB6}.Release.Build.0 = Release|.NET
+		{73D5B526-2941-4BE4-913A-4DDDAB0B1E8F}.Debug.ActiveCfg = Debug|.NET
+		{73D5B526-2941-4BE4-913A-4DDDAB0B1E8F}.Debug.Build.0 = Debug|.NET
+		{73D5B526-2941-4BE4-913A-4DDDAB0B1E8F}.Release.ActiveCfg = Release|.NET
+		{73D5B526-2941-4BE4-913A-4DDDAB0B1E8F}.Release.Build.0 = Release|.NET
+		{77B60969-E66F-4A7C-813B-3E5076D1C207}.Debug.ActiveCfg = Debug
+		{77B60969-E66F-4A7C-813B-3E5076D1C207}.Release.ActiveCfg = Release
+		{D16F6595-9AA9-4898-B504-EC77A820574F}.Debug.ActiveCfg = Debug
+		{D16F6595-9AA9-4898-B504-EC77A820574F}.Release.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

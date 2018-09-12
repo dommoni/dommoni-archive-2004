@@ -1,0 +1,21 @@
+<SCRIPT>
+var win = null;
+function showDelete(name,opLink,context)
+{
+    var w = 300;
+	var h = 180;
+
+	var winl = (screen.width-w)/2;
+  	var wint = (screen.height-h)/2;
+  	var settings  ='height='+h+',';
+        settings +='width='+w+',';
+		settings +='top='+wint+',';
+        settings +='left='+winl+',';
+        settings +='scrollbars=no,';
+        settings +='resizable=no';
+  var pageLink = '../projectConfirmDeleteDlg.jsp?name='+name+'&oplink='+opLink+'&context='+context;
+  win = window.open(pageLink,'noname',settings);
+}
+</SCRIPT>
+
+<a href="#" onClick="showDelete('Name','servlet/ControllerServlet','Document');return false">testit</A>

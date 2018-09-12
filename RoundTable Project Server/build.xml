@@ -1,0 +1,189 @@
+<project name="ProjectServer" default="help">
+
+   <property name="build.dir" value="build" />
+   <property name="ini.dir" value="ini" />
+   <property name="lib.dir" value="lib" />
+   <property name="src.dir" value="src" />
+   
+   
+   <property name="classpath" value="${lib.dir}/servlet-api.jar;${lib.dir}/axis.jar;${lib.dir}/jaxrpc.jar;${lib.dir}/commons-dbcp-1.2.1.jar;${lib.dir}/commons-pool-1.2.jar;${lib.dir}/saaj.jar;${lib.dir}/commons-logging.jar;${lib.dir}/mail.jar" />
+   
+   <property name="package.file" value="ProjectServer.jar" />
+   <property name="war.file" value="ProjectServer.war" />
+   <property name="api.file" value="ProjectServerAPI.jar" />
+   <property name="pss.file" value="ProjectServerServices.jar" />
+   <property name="sdk.file" value="roundtable-sdk.jar" />
+   <property name="roundtable.setup.file" value="RoundTable Server Setup.exe" />
+   
+   <target name="init">
+      <mkdir dir="${build.dir}" /> 
+   </target>
+   
+   <target name="build" depends="init">
+      <javac debug="on" srcdir="${src.dir}" destDir="${build.dir}" classpath="${classpath}" source="1.4" />
+   </target>
+   
+   <target name="package" depends="build">
+      <jar jarFile="${package.file}" baseDir="${build.dir}" />
+   </target>
+   
+   <target name="war" depends="package">
+      <mkdir dir="tmp-war" />
+      <mkdir dir="tmp-war/WEB-INF" />
+      <mkdir dir="tmp-war/WEB-INF/lib" />
+      
+      <!-- copy all libraries -->
+      <copy todir="tmp-war/WEB-INF/lib">
+         <fileset dir="${lib.dir}">
+            <exclude name="servlet-api.jar" />
+         </fileset>
+      </copy>
+      
+      <!-- copy the ProjectServer build -->
+      <copy file="${package.file}"
+         todir="tmp-war/WEB-INF/lib" />
+      	
+      <!-- copy server-config.wsdd file -->
+      <copy file="${ini.dir}/server-config.wsdd"
+         todir="tmp-war/WEB-INF" />
+         
+      <!-- copy web.xml file -->
+      <copy file="${ini.dir}/web.xml"
+         todir="tmp-war/WEB-INF" />
+       	
+      <jar jarFile="${war.file}" baseDir="tmp-war" />
+      
+      <delete dir="tmp-war" />
+   </target>
+   
+   <!-- Internal API Packaging (for Dommoni Applications)-->
+   <target name="package-iapi" depends="build">
+      <jar jarFile="${api.file}">
+         <fileset dir="${build.dir}">
+         	<include name="**/ProjectServerConnection*" />
+         	
+         	<include name="**/Account.class" />
+         	<include name="**/AccountContact.class" />
+         	<include name="**/AccountProfile.class" />         	
+         	<include name="**/AccountSettings.class" />
+         	<include name="**/AccountType.class" />
+         	<include name="**/Announcement.class" />
+         	<include name="**/BinaryAttachment.class" />
+         	<include name="**/Comment.class" />
+         	<include name="**/CommentAttachment.class" /> 
+         	<include name="**/CustomField.class" />
+			<include name="**/CustomFieldAttribute.class" />
+         	<include name="**/CustomFieldValueWrapper.class" />
+         	<include name="**/CustomFieldValueWrapperInt.class" />
+         	<include name="**/CustomFieldValueWrapperString.class" />
+         	<include name="**/Discussion.class" />
+         	<include name="**/DiscussionMessage.class" />
+         	<include name="**/Document.class" />
+         	<include name="**/DocumentType.class" />
+         	<include name="**/EventLogEntry.class" />       
+         	<include name="**/*Flag.class" />
+         	<include name="**/Flags.class" />
+         	<include name="**/Forum.class" />
+         	<include name="**/ForumReply.class" />
+         	<include name="**/Meeting.class" />
+         	<include name="**/MeetingAgendaItem.class" />
+         	<include name="**/MeetingFollowupItem.class" />
+         	<include name="**/MeetingNoteItem.class" />
+         	<include name="**/NamedFieldCollection.class" />
+         	<include name="**/NamedFieldTemplate.class" />
+         	<include name="**/NamedTemplateFieldDefinition.class" />
+         	<include name="**/Notification.class" />
+         	<include name="**/NotificationContext.class" />
+         	<include name="**/NotificationContextObject.class" />
+         	<include name="**/NotificationObjectRegistry.class" />
+         	<include name="**/NotificationType.class" />
+         	<include name="**/ObjectAttachment.class" />
+         	<include name="**/Project.class" />
+         	<include name="**/RecentChange.class" />
+         	<include name="**/Schedule.class" />
+         	<include name="**/ScheduleItem.class" />
+         	<include name="**/Session.class" />
+         	<include name="**/SessionLogEntry.class" />
+         	<include name="**/SessionType.class" />
+         	<include name="**/Task.class" />
+         	<include name="**/TaskReminder.class" />
+         	<include name="**/TaskStatus.class" />
+         	
+         	<include name="**/IAccountManager.class" />
+         	<include name="**/IAnnouncementManager.class" />
+         	<include name="**/IAttachmentManager.class" />
+         	<include name="**/ICommentManager.class" />
+         	<include name="**/IDiscussionManager.class" />
+         	<include name="**/IDocumentManager.class" />
+         	<include name="**/IEventLogManager.class" />
+         	<include name="**/IForumManager.class" />
+         	<include name="**/IMeetingManager.class" />
+         	<include name="**/INamedFieldTemplateManager.class" />
+         	<include name="**/INotificationManager.class" />
+         	<include name="**/IProjectManager.class" />
+         	<include name="**/IRecentChangesManager.class" />
+         	<include name="**/IScheduleManager.class" />
+         	<include name="**/ISessionManager.class" />
+         	<include name="**/ISessionLogManager.class" />
+         	<include name="**/ISystemManager.class" />
+         	<include name="**/ITaskManager.class" />
+         </fileset>
+      </jar>
+   </target>
+   
+   <target name="package-sdk" depends="build">      
+   </target>
+   
+   <!-- Make a full RoundTable Distribution, ready for 
+   		makensis
+   	-->
+   <target name="dist">
+      <tstamp>
+      	<format property="touch.time"  pattern="MM/dd/yyyy hh:mm aa" locale="en" unit="week" offset="-2"/>
+      </tstamp>
+      
+      <taskdef name="nsis" classname="info.waynegrant.ant.NsisTask">
+          <classpath>
+              <pathelement location="wat-12.jar"/>
+          </classpath>
+      </taskdef>
+      
+      <antcall target="clean" />
+      <antcall target="init" />
+      
+      <antcall target="build" />
+      <touch datetime="${touch.time}" >
+         <fileset dir="${build.dir}" />
+      </touch>
+      
+      <antcall target="package" />
+      <touch datetime="${touch.time}" file="${package.file}" />
+      
+      <antcall target="package-iapi" />
+      <touch datetime="${touch.time}" file="${api.file}" />
+      
+      <antcall target="war" />
+      <touch datetime="${touch.time}" file="${war.file}" />
+      
+      <ant antfile="build.xml" inheritAll="false" 
+           dir="../RoundTable Project Server Web Interface" target="war"/>
+      
+      <nsis script="installer/nsis_installer.nsi" verbosity="4"/>
+      <move file="installer/install.exe" tofile="${roundtable.setup.file}" />
+      <touch datetime="${touch.time}" file="${roundtable.setup.file}" />
+      
+   </target>
+	
+   <target name="clean">
+      <delete dir="${build.dir}" />
+      <delete file="${package.file}" />
+      <delete file="${war.file}" />
+      <delete file="${api.file}" />
+	  <delete file="${sdk.file}" />
+      <delete file="${roundtable.setup.file}" />
+   </target>
+	
+	<target name="help">
+		
+	</target>
+</project>

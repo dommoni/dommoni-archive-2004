@@ -1,0 +1,1 @@
+create table `debug` (do_debug BOOL DEFAULT 0)

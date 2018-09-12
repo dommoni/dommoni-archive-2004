@@ -1,0 +1,1 @@
+insert into task_status (project_id,title,is_global) values (-1,'COMPLETE',1) 

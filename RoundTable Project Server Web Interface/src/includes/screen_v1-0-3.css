@@ -1,0 +1,2976 @@
+/*-------------------------------------------------
+PAGE BODY
+-------------------------------------------------*/
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	/*background: url(/images/back_gstripes.gif) #fff; */
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+	color: #333;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+/* Make sure the table cells show the right font */
+td { font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif; }
+
+
+/*-------------------------------------------------
+GLOBALS & GENERAL CASES
+-------------------------------------------------*/
+
+a {text-decoration: underline; padding: 1px; }
+a:link { color: #03c; }
+a:visited { color: #03c; }
+a:hover { color: #fff; background-color: #30c; text-decoration: none; }
+
+a.admin:link, a.admin:visited {
+	color: #f00;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+a.admin:hover { color: #fff; background: #f00; }
+
+a.black:link, a.black:visited {
+	color: #000;
+}
+
+a.black:hover {
+	color: #fff;
+	background: #000;
+}
+
+a.anchor:link, a.anchor:visited, a.anchor:hover {
+	color: #fff;
+	background: #fff;
+	font-size: 0px;
+	text-decoration: none;
+	padding: 0;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+small {
+	font-size: 10px;
+	line-height: 13px;
+	}
+
+x-small {
+	font-size: 9px;
+	line-height: 11px;
+	}
+
+blockquote {
+	font-size: 11px;
+	color: #666;
+	margin: 20px;
+}
+
+ol, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+
+li {
+	font-size: 10px;
+	line-height: 13px;
+	padding: 3px 0;
+}
+
+li img {
+	padding-right: 3px;
+}
+
+h1 {
+	font-family: "Lucida Grande", arial, sans-serif;
+	padding: 0;
+	border-bottom: 0;
+	margin: 0;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h1.blankslate {
+	background: #ff6;
+	color: #000;
+	margin-bottom: 10px;
+	padding: 5px;
+	margin-left: -5px;
+}
+
+h2 {
+	font-family: "Lucida Grande", arial, sans-serif;
+	margin: 20px 0 5px 0px;
+	color: #333;
+	font-size: 14px;
+	padding: 0;
+}
+
+h2.subheader {
+	padding: 0 0 2px 0;
+	margin: 15px 0 5px 0;
+	font-size: 12px;
+	border-bottom: 1px solid #000;
+	color: #000;
+}
+
+h3 {
+	margin: 20px 0 0 0;
+	color: #666;
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-size: 14px;
+	padding: 0;
+}
+
+.smallnote {
+	font-size: 10px;
+	color: #999;
+	font-weight: normal;	
+}
+
+.light {
+	font-weight: normal;
+}
+
+.lightgray {
+	font-weight: normal;
+	color: #999;
+	font-size: 9px;
+}
+
+.lightgray a:link, a:visited {
+	color: #999;
+	background: inherit;
+	text-decoration: underline;
+}
+
+.lightgray a:hover {
+	color: #fff;
+	background: #000;
+}
+
+.highlight {
+	background-color: #ffc;
+}
+
+td, th {
+	padding: 3px;
+}
+
+.bigger {
+	font-size: 12px;
+}
+
+.red {
+	color: #c00;
+}
+
+.blue {
+	color: #06c;
+	}
+	
+.green {
+	color: #390;
+	}
+
+code, pre	{
+	font-family: "Bitstream Vera Sans Mono", monaco, "Courier New", courier, monospace;
+	background: inherit;
+	color: #333;
+	font-size: 80%
+	}
+
+	/*  Work around IE/Win code size bug - courtesy Jesper, waffle.wootest.net  */
+
+* html code	{
+	font-size : 105%; 
+	}
+
+.PrivateMessage, .Privatetodo {
+	background: url(/images/private-back-red.gif) #fff;
+	padding: 3px 10px 0 10px;
+	border-top: 1px solid #fcc;
+}
+
+.Privatetodo {
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+
+img.privatebug {
+	padding-left: 10px;
+}
+
+/*-------------------------------------------------
+STRUCTURE
+-------------------------------------------------*/
+
+.Shadow {
+	float: none;
+	background: url(/images/shadowback2.gif) repeat-y #f0f0f0;
+	margin: 0 auto;
+	width: 768px;
+	}
+
+#StatusBarContainer {
+	margin: 0 auto;
+	text-align: center;
+	width: 760px;
+	}
+
+.Container {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 760px;
+	}
+
+.ClearAll {
+	padding: 0px;
+	clear: both;
+	font-size: 0px;
+	}
+
+.ShadowCap {
+	padding: 0px;
+	margin: 0 auto;
+	clear: both;
+	width: 768px;
+	height: 14px;
+	font-size: 0px;
+	background: url(/images/shadow_cap.gif) top #f0f0f0;
+}
+
+.ShadowTop {
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+	width: 768px;
+	height: 8px;
+	font-size: 0px;
+	background: url(/images/shadow_top.gif) top #f0f0f0;
+}
+
+#ContentFrame, #DashContentFrame, .ContentFrame {
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom: none;
+	float: left;
+	background-color: #fff;
+	/* box model hack */
+	width: 760px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 718px;
+}
+
+html>body #ContentFrame, html>body #DashContentFrame, html>body .ContentFrame {
+	/* be nice to opera */
+	width: 718px;
+}
+
+.Left {
+	margin: 0;
+	padding: 0 50px 0px 0;
+	text-align: left;
+	float: left;
+	/* box model hack */
+	width: 490px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 440px;
+	}
+
+html>body .Left {
+	/* be nice to opera */
+	width: 440px;
+}
+
+.RightMessage {
+	margin: 0;
+	padding: 0 20px 0 20px;
+	text-align: left;
+	border-left: 1px dotted #dcdcdc;
+	float: left;
+	/* box model hack */
+	width: 500px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 440px;
+	}
+
+html>body .RightMessage {
+	/* be nice to opera */
+	width: 440px;
+}
+
+.LeftDash {
+	margin: 0;
+	padding: 0 20px 0px 0;
+	text-align: left;
+	float: left;
+	/* box model hack */
+	width: 220px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 200px;
+	}
+
+.Right {
+	margin: 0;
+	padding: 0 0 0 20px;
+	border-left: 1px dotted #dcdcdc;
+	text-align: left;
+	float: left;
+	/* box model hack */
+	width: 225px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 204px;
+	}
+
+html>body .Right {
+	/* be nice to opera */
+	width: 204px;
+}
+
+.LeftMessage {
+	margin: 0;
+	padding: 0 20px 0 0;
+	text-align: left;
+	float: left;
+	/* box model hack */
+	width: 225px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 204px;
+	}
+
+html>body .LeftMessage {
+	/* be nice to opera */
+	width: 204px;
+}
+
+.RightDash {
+	margin: 0;
+	padding: 0 0 0 20px;
+	border-left: 1px dotted #dcdcdc;
+	text-align: left;
+	float: left;
+	/* box model hack */
+	width: 494px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 474px;
+	}
+
+.Full {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 715px;
+	}
+
+#Footer {
+	font-size: 10px;
+	color: #666;
+	width: 715px;
+	margin: 0 auto;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+#Footer a:link, #Footer a:visited {
+	color: #666;
+}
+
+#Footer a:hover {
+	color: #fff;
+	background: #666;
+}
+
+/*-------------------------------------------------
+HEADER
+-------------------------------------------------*/
+
+#Header {
+	background: #036;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	}	
+
+#Header h1 /* client name */ {
+	padding: 0;
+	margin: 7px 0 0 20px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #fc0;
+	}	
+
+#Header h2 /* project name */ {
+	padding: 0 0 7px 0;
+	margin: 0 0 0 20px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	border: none;
+	font-family: "Lucida Grande", arial, sans-serif;
+	}	
+
+#Header h3 {
+	padding: 0 20px 0 0;
+	margin: 7px 0px 0 0;
+	width: 200px;
+	text-align: right;
+	float: right;
+	font-size: 10px;
+	font-weight: normal;
+	font-family: verdana;
+}
+
+#Header h3 a.current {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#fresh_all h2 {
+	padding: 0 0 2px 0;
+	margin: 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+/*-------------------------------------------------
+STATUS BAR
+-------------------------------------------------*/
+
+#Statusbar {
+	color: #666;
+	padding: 0 20px 0 20px;
+	margin: 20px 0 5px 0;
+	text-align: left;
+	font-size: 9px;
+}
+
+#Statusbar a.admin {
+	font-size: 9px;
+}
+
+#StatusLeft {
+	width: 500px;
+	float: left;
+	font-weight: bold;
+	color: #333;
+}
+
+#StatusLeft a, #StatusRight a {
+	font-weight: normal;
+}
+
+#StatusLeft a:hover, #StatusRight a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+#StatusRight {
+	text-align: right;
+	margin-left: 500px;
+}
+
+/*-------------------------------------------------
+TABS
+-------------------------------------------------*/
+
+#Tabs {
+	height: 21px;
+	margin: 0;
+	padding-left: 20px;
+}
+
+#Tabs li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	border: none;
+}
+	
+#Tabs a:link, #Tabs a:visited {
+	float: left;
+	background: #eaeac7;
+	font-size: 10px;
+	font-weight: normal;
+	padding: 3px 6px;
+	margin: 0 -1px 0 0;
+	border: 1px solid #036;
+	border-bottom: #eaeac7;
+	text-decoration: none;
+	color: #333;
+}
+
+#Tabs a:link.current, #Tabs a:visited.current {
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	color: #393;
+	font-weight: bold;
+}
+
+#Tabs a:hover {
+	color: #000;
+	background: #ffc;
+}
+
+
+#Tabs li#AdminTab a:link, #Tabs li#AdminTab a:visited {
+	background: #000;
+	border-bottom: 1px solid #000;
+	color: #fff;
+}
+
+#Tabs li#AdminTab a:hover {
+}
+
+#Tabs li#AdminTab a.current {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	color: #000;
+}
+
+#Tabs li#AdminTab a.current:hover {
+}
+
+
+/*-------------------------------------------------
+MESSAGE CATEGORY LINKS
+-------------------------------------------------*/
+
+#MTabs {
+	margin-top: 10px;
+}
+
+#MTabs li {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+#MTabs li a {
+	display: block;
+	padding: 4px;
+	margin: 0;
+}
+
+#MTabs li a.current:link, #MTabs li a.current:visited {
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+	background: #ececec;
+}
+
+#MTabs li a.current:hover {
+}
+
+
+/*-------------------------------------------------
+SECTION HEADER
+-------------------------------------------------*/
+
+.SectionHeader {
+	margin: 0 0 20px 0;
+}
+
+span.SectionDescription {
+	font-weight: normal;
+	color: #666;
+}
+
+.SectionHeader h1 /* title of the page */ {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #666;
+	margin: 0;
+	font-size: 16px;
+	color: #000;
+}
+
+.SectionHeader h3 /* formerly 'tools' */ {
+	font-family: verdana;
+	padding: 2px 0 0 0;
+	margin: 0;
+	font-size: 10px;
+	font-weight: normal;
+	color: #666;
+}
+
+.SectionHeader h3 a.back {
+	color: #666;
+	text-decoration: none;
+	border-bottom: 1px dotted #666;
+	padding-bottom: 0;
+}
+
+.SectionHeader h3 a.back:hover {
+	color: #fff;
+	background-color: #666;
+}
+
+.SectionHeader div.ActionButton {
+	background: #fff;
+	border-top: none;
+	float: right;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+
+.SectionHeader div.ActionButton {
+	font-size: 10px;
+}
+
+/*-------------------------------------------------
+INDIVIDUAL POSTS
+-------------------------------------------------*/
+
+.Post {
+	margin: 0 0 10px 0;
+	padding: 0 0 20px 0;
+}
+
+.Post p {
+	padding: 0;
+	margin: 3px 0 10px 0;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.Post h1 {
+	padding-top: 5px;
+	color: #000;
+}
+
+.Post h1 a {
+	color: #000;
+	text-decoration: none;
+}
+
+.Post h1 a:hover {
+	background: #fff;
+	color: #000;
+	text-decoration: underline;
+}	
+
+h2.date /* the date */ {
+	padding: 0 0 0 0;
+	margin: 0 0 2px 0;
+	color: #333;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 12px;
+	border-bottom: 1px solid #ccc;
+}
+
+.Post h2.subhead {
+	padding: 0;
+	margin: 15px 0 0 0;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 12px;
+}
+
+.Post h3 /* the post details, formerly p.whenwho */ {
+	padding: 0 0 0 0;
+	margin: 0 0 5px 0;
+	color: #666; /* #393; */
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 12px;
+	text-align: left;
+}
+
+.Post h3 a {
+	color: #666;
+	text-decoration: none;
+	border-bottom: 1px dotted #666;
+	padding-bottom: 0;
+}
+
+.Post h3 a:hover {
+	color: #fff;
+	background-color: #666;
+}
+
+.Post h3 a.commentlink:link {
+	font-weight: bold;
+	color: #000;
+}
+
+.Post h3 a.commentlink:hover {
+	color: #fff;
+	background: #333;
+}
+
+.Post ol, ul {
+	margin: 3px 0 10px 0;
+	padding: 0;
+}
+
+.Post li {
+	margin-left: 30px;
+	font-size: 12px;
+}
+
+.Post ul li {
+	list-style-type: square;
+}
+
+.Post table {
+	background: #dcdcdc;
+}
+
+.Post td {
+	background: #fff;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.FormLine {
+	padding: 0;
+	margin: 3px 0 10px 0;
+	font-size: 12px;
+	background: #fff;
+}
+
+
+/*-------------------------------------------------
+LINK BOXEN
+-------------------------------------------------*/
+
+.Links {
+	padding-bottom: 15px;
+	display: none;
+}
+
+.LinkBox, .LinkBoxWithFile {
+	width: 75%;
+	padding: 4px;
+	margin-top: -1px; /* stacked fileboxes share a border */
+	background: url(/images/back_ystripes.gif) #fff;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	color: #666;
+	font-size: 10px;
+	line-height: 16px;
+}
+
+.LinkBoxWithFile img {
+	padding: 0 3px 20px 0;
+}
+
+.LinkBox a, .LinkBoxWithFile a {
+	font-size: 12px;
+}
+
+
+
+/*-------------------------------------------------
+DASHCAL
+-------------------------------------------------*/
+
+table.Dashcal {
+	margin-bottom: 15px;
+	/* border-right: 2px solid #E1E0E0; */
+	background: #e1e0e0;
+	}
+
+table.Dashcal th {
+	color: #999;
+	background: #fff;
+	/* border-left: 2px solid #E1E0E0;
+	border-bottom: 1px solid #E1E0E0; */
+	padding: 3px;
+	font-size: 10px;
+	text-align: left;
+}
+
+table.Dashcal td {
+	background: #fff;
+	/* border-left: 2px solid #E1E0E0;
+	border-bottom: 2px solid #E1E0E0; */
+	padding: 3px;
+	color: #ccc;
+	font-size: 9px;
+}
+
+table.Dashcal td.weekend, table.Dashcal th.weekend {
+	background: #f0f0f0;
+}
+
+
+table.Dashcal td.with {
+	color: #333;
+	border: 1px solid #000;
+	font-weight: bold;
+}
+
+table.Dashcal ul {
+	padding: 0;
+	margin: 3px 0 0 0;
+}
+
+table.Dashcal li {
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 11px;
+	padding: 3px 0 0 0;
+	margin-bottom: 5px;
+}
+
+
+/*-------------------------------------------------
+SIDEBAR
+-------------------------------------------------*/
+
+.Sidebar h1, .Sidebar h1.late {
+	padding: 4px 0 2px 0;
+	border-bottom: 1px solid #666;
+	margin: 0 0 5px 0;
+	font-size: 12px;
+	color: #000;
+}
+
+.Sidebar h1.late {
+	padding-top: 0;
+	border-bottom: 1px solid #c00;
+	color: #c00;
+}
+
+.Sidebar p.incategory {
+	margin-top: 0;
+	background: #ececec;
+	padding: 4px;
+}
+
+.Sidebar p.incategory a {
+	display: block;
+}
+
+.LeftMessage .Sidebar h1 {
+	padding: 3px 0 2px 0;
+}
+
+.Sidebar h2, .Sidebar h2.border {
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	margin: 20px 0 3px 0;
+	padding: 0;
+	border: none;
+}
+
+.Sidebar h2.border {
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.SidebarPosts li {
+	font-size: 10px;
+	color: #666;
+}
+
+.SidebarPosts h1 {
+	color: #333;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	border: none;
+}
+
+.SidebarPosts h2 {
+	color: #666;
+	font-size: 11px;
+	margin-bottom: 0;
+}
+
+.SidebarPosts h3 {
+	color: #999;
+	font-weight: normal;
+	font-size: 10px;
+	margin: 0;
+}
+
+.SidebarOriginal {
+	padding-top: 20px;
+}
+
+.SidebarOriginal h1 {
+	font-size: 10px;
+	border-bottom: none;
+	color: #333;
+}
+
+.SidebarOriginal p {
+	font-size: 10px;
+}
+
+.SidebarContact {
+	font-size: 10px;
+	line-height: 14px;
+	color: #333;
+	margin: 10px 0 20px 0;
+}
+
+.SidebarContact h3 {
+	color: #000;
+	margin: 0;
+	font-size: 10px;
+}
+
+#Poster {
+	margin-bottom: 30px;
+}
+
+.Sidebar ol {
+	padding-left: 20px;
+}
+
+
+.Sidebar ul li {
+	list-style: none;
+	padding: 0 0 3px 0;
+	margin-left: 0;
+}
+
+
+/*-------------------------------------------------
+COMMENTS
+-------------------------------------------------*/
+
+.Comments h4 {
+	margin: 0 0 10px 0;
+	font-size: 10px;
+	color: #666;
+	padding: 3px 0;
+	font-weight: normal;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.Comments h2 {
+	padding: 2px 4px;
+	color: #fff;
+	background: #666;
+	font-size: 11px;
+	border-bottom: 1px solid #333;
+	margin: 0;
+
+}
+
+.Comments div.Post {
+	background: #f9f9f9;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: 10px 5px 15px 0px;
+}
+
+.Comments #OriginalPost {
+	padding: 0 0 30px 0;
+	background: #fff;
+	border-bottom: none;
+}
+
+.Comments div.post h3 {
+	border-bottom: none;
+	color: #333;
+}
+
+.Post#Preview {
+	border: 2px solid #ef9c00;
+	padding: 0;
+}
+
+.Post#Preview h2 {
+	margin: 0;
+	padding: 5px 10px;
+	background: #ff6;
+	border: none;
+	color: #000;
+}
+
+.Post#Preview #PreviewBody {
+	padding: 10px;
+}
+
+.Post#Preview #PreviewButtons {
+	text-align: left;
+	background: #ffc;
+	padding: 5px 10px;
+}
+
+
+/*-------------------------------------------------
+RETURN LINK
+-------------------------------------------------*/
+
+.return, .returnborder {
+	padding-bottom: 2px;
+	margin: 0 0 15px 0;
+	font-size: 11px;
+	color: #666;
+	font-weight: normal;
+	border: none;
+}
+
+.returnborder {
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.return a, .returnborder a {
+	color: #666;
+}
+
+.return a:hover, .returnborder a:hover {
+	background-color: #666;
+	color: #fff;
+}
+
+
+/*-------------------------------------------------
+FORM STUFF (MORE BELOW)
+-------------------------------------------------*/
+
+table.NewLink th {
+	text-align: left;
+	font-size: 10px;
+}
+
+.help {
+	font-weight: normal;
+	color: #666;
+	font-size: 10px;
+}
+
+span.formoptions /* small text inside an h2 */ {
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+span.formoptions a {
+	padding: 4px;
+}
+
+.ButtonGroup {
+	font-size: 11px;
+	text-align: right;
+	margin: 15px 0 3px 0;
+}
+
+.error, .fieldWithErrors {
+	background-color: red;
+	padding: 2px;
+}
+
+#ErrorExplanation {
+	border: 2px solid #red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#ErrorExplanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 27px;
+	font-size: 12px;
+	margin: -7px;
+	background: url(/images/alertbad_icon.gif) #c00 left no-repeat;
+	color: #fff;
+}
+
+#ErrorExplanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#ErrorExplanation ul {
+	margin-left: 30px;
+}
+
+#ErrorExplanation ul li {
+	font-size: 12px;
+	list-style: square;
+}
+
+
+/*-------------------------------------------------
+MILESTONES
+-------------------------------------------------*/
+
+.LateBlock, .UpcomingBlock, .CompletedBlock {
+	margin-bottom: 25px;
+}
+
+.LateBlock {
+	border-left: 1px solid #c00;
+}
+
+.UpcomingBlock {
+	border-left: 1px solid #fc0;
+}
+
+.CompletedBlock {
+	border-left: 1px solid #090;
+}
+
+.Milestone {
+	border-bottom: 1px solid #e0e0e0;
+	padding: 8px 0 8px 5px;
+}
+
+.Milestone ul {
+	margin: 3px 0 8px 30px;
+}
+
+.Milestone li {
+	color: #ccc;
+	border: none;
+	list-style: square;
+	padding: 2px 0 0 0;
+}
+
+.Milestone li a {
+	color: #666;
+}
+
+.Milestone li a:hover {
+	color: #fff;
+	background: #666;
+}
+
+h1.LateMilestones, h1.UpcomingMilestones, h1.CompletedMilestones {
+	font-family: verdana;
+	font-size: 10px;
+	padding: 3px;
+	/* background-color: #c00; */
+	background-color: #fc0;
+	/* color: #fff; */
+	color: #000;
+	margin: 0;
+	text-align: left;
+	/* border-bottom: 1px solid #c00; */
+	border-bottom: 1px solid #fc0;
+}
+
+h1.LateMilestones {
+	background-color: #c00;
+	border-bottom: 1px solid #c00;
+	color: #fff;
+}
+
+h1.CompletedMilestones {
+	background-color: #090;
+	border-bottom: 1px solid #090;
+	color: #fff;
+}
+
+.Milestone h2 /* the date */ {
+	font-family: verdana;
+	padding: 0 0 3px 0;
+	margin: 0;
+	color: #c00; /* future by default */
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.Milestone h2.complete {
+	color: #090;
+}
+
+.Milestone h2.upcoming {
+	color: #c93;
+}
+
+.Milestone h3 /* the name */ {
+	padding: 0;
+	border-bottom: 0;
+	margin: 0;
+	color: #333;
+	font-size: 14px;
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-weight: bold;
+}
+
+.day {
+	font-weight: normal;
+}
+
+.responsibility {
+	font-size: 10px;
+	color: #666;
+	font-weight: normal;	
+}
+
+/* MILESTONE DIALOG */
+
+.Milestone div.DialogHeader {
+	background-color: #333;
+	padding: 3px 0 3px 10px;
+	text-align: left;
+	border: 1px solid #333;
+	border-bottom: none;
+	margin: 0;
+}
+
+.Milestone div.DialogHeader h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+	color: #fff;
+}
+
+.Milestone div.DialogBody {
+	width: auto;
+	background: url(/images/back_gstripes.gif);
+	border: 1px solid #d5d5d5;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 0 12px 8px 15px;
+	margin: 0;
+}
+
+.Milestone div.PrimaryAction {
+	font-size: 10px;
+	margin: 10px 0 0 0;
+	padding: 5px 0 0 0;
+	border-top: 1px dotted #999;
+	text-align: right;
+}
+
+#NewMilestone {
+	background: none;
+	padding: 0 0 20px 0;
+}
+
+/* ADD MORE MILESTONES */
+
+ul li table#AddManyMilestones th {
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+ul li table#AddManyMilestones th span {
+	font-weight: normal;
+	color: #666;
+	font-size: 11px;
+}
+
+table#AddManyMilestones tr.shaded {
+	background-color: #efefef;
+	}
+
+table#AddManyMilestones td {
+	padding: 8px 4px;
+}
+
+.AddTheseMilestones {
+	text-align: right;
+}
+
+h2.ForReference {
+	margin-left: 0;
+}
+
+/* MILESTONE  */
+
+table.Calendar {
+	font-size: 9px;
+	text-align: center;
+	color: #666;
+}
+
+table.Calendar th {
+	color: #666;
+	border-bottom: 1px solid #ccc;
+	background: #f2f2f2;
+}
+
+table.Calendar th.month {
+	text-align: right;
+	color: #333;
+}
+
+table.Calendar td.past, table.Calendar td#today, table.Calendar td.future_today, table.Calendar td.past_today, table.Calendar td.past_future, table.Calendar td.past_future_today, table.Calendar td.future, table.Calendar td.late {
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	color: #fff;
+}
+
+table.Calendar td.past {
+	background: #393;
+	color: #fff;
+}
+
+table.Calendar td.late {
+	background: #c00;
+	color: #fff;
+}
+
+table.Calendar td#today {
+	/* background: #fc0; */
+	background: #9cf;
+	color: #000;
+}
+
+table.Calendar td.future_today {
+	color: #69c;
+	background: #fc0;
+	font-weight: bold;
+}
+
+table.Calendar td.past_today {
+	color: #9ff;
+	background: #393;
+	font-weight: bold;
+}
+
+table.Calendar td.past_future {
+	background-image: url(/images/milestone_future_past.gif);
+	background-position: center;
+	color: #fff;
+}
+
+table.Calendar td.past_future_today {
+	background-image: url(/images/milestone_future_past.gif);
+	background-position: center;
+	color: #9ff;
+	font-weight: bold;
+}
+
+table.Calendar td.weekend {
+	color: #999;
+}
+
+table.Calendar td.future {
+	/* background: #c00; */
+	background: #fc0;
+	color: #000;
+}
+
+table.Calendar tr.pastmonth {
+	display: none;
+}
+
+
+/*-------------------------------------------------
+CONTACTS
+-------------------------------------------------*/
+
+.Contacts {
+	padding: 0 0 15px 0;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+	}	
+
+.Contacts td {
+	padding: 10px;
+	text-align: left;
+	width: 25%;
+	}	
+
+.Contacts tr.shaded td {
+	background-color: #efefef;
+}
+
+.Contacts tr.Firm td {
+	background-color: #ffc;
+}
+
+.Contacts td.noline {
+	border: 0;
+	}	
+
+.Contacts td.personcard, tr.Firm td.personcard {
+	padding: 5px 5px 5px 10px;
+	background-color: #fff;
+	border-top: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	}	
+
+.Contacts td.endofentry {
+	padding: 0 0 2px 0;
+	border-bottom: 1px solid #efefef;
+	margin-bottom: 5px;
+	}	
+
+.Contacts td h1.company {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	border: none;
+	}	
+
+.Contacts td h1 {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	font-weight: bold;
+	border: none;
+	}	
+
+.Contacts td h2 {
+	font-family: verdana;
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	font-weight: normal;
+	border: none;
+	color: #000;
+	}	
+
+.Contacts td h3 {
+	padding: 0;
+	margin: 0 0 3px 0;
+	font-size: 10px;
+	color: #000;
+	font-weight: normal;
+	}	
+
+.Contacts td h4 {
+	padding: 0 0 4px 0;
+	margin: 0;
+	font-size: 10px;
+	font-weight: normal;
+	color: #666;
+}
+
+.Contacts td span.itemnote {
+	font-size: 10px;
+	color: #666;
+	font-weight: normal;	
+}
+
+
+/*-------------------------------------------------
+DASHBOARD / PROJECTS PAGE
+-------------------------------------------------*/
+
+.EmailExample {
+	padding: 7px;
+	border: 1px dashed #ccc;
+	font-family: monospace;
+	font-size: 10px;
+	background-color: #FDFAE0;
+	}
+
+.ActiveClients {
+	margin-bottom: 10px;
+}
+
+.InactiveClients {
+}
+
+.DashTabs {
+	background-color: #333;
+	text-align: left;
+	padding: 5px 0 0 0;
+}
+
+.DashTabs ul#Tabs {
+	margin: 0px;
+	padding-left: 20px;
+}
+
+#DashContentFrame {
+	border-top: none;
+}
+
+.Client {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+.Client h1, .InactiveClients h1 {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 0 2px;
+	color: #000;
+	border-bottom: 1px dotted #dcdcdc;
+}
+
+.InactiveClients h1 {
+	color: #666;
+}
+
+.Client ul.Project, .Client ul.InactiveProjects {
+	margin: 0 0 0 7px;
+	padding: 0 0 7px 0;
+}
+
+.Project li, .InactiveProjects li {
+	margin: 2px 0 0 0;
+	padding: 0;
+	border-bottom: none;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.Project li.updated {
+	font-weight: bold;
+}
+
+.Project li a:link, .Project li a:visited {
+	color: #339;
+}
+
+.Project li a:hover {
+	background-color: #339;
+	color: #fff;
+}
+
+.InactiveProjects li {
+	color: #333;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.InactiveProjects li a {
+	color: #666;
+}
+
+.InactiveProjects li a:hover {
+	color: #fff;
+	background-color: #666;
+}
+
+h2.dashstatus {
+	padding: 0 0 2px 0;
+	margin: 0 0 5px 0;
+	color: #999;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 12px;
+	border-bottom: 1px solid #ccc;
+}
+
+p.fixed10 {
+	font-family: courier, monospace;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+div.dashannouncement {
+	border-top: 1px solid #fc0;
+	border-bottom: 1px solid #fc0;
+	font-size: 10px;
+	color: #000;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+div.latemilestones {
+	background-color: #fcc;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+div.latemilestones h1 {
+	padding: 0 0 2px 0;
+	margin: 0 0 5px 0;
+	font-size: 12px;
+	border-bottom: 1px solid #c00;
+	color: #c00;
+}
+
+div.latemilestones ul li strong {
+	color: #c00;
+}
+
+div.latemilestones ul {
+	margin-bottom: 0;
+}
+
+
+/*-------------------------------------------------
+NEW PROJECT PROCESS
+-------------------------------------------------*/
+
+.fauxdivtop {
+	border-top: 1px solid #ccc;
+	padding-top: 8px;
+}
+
+.fauxdivbottom {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 8px;
+}
+
+table.NewPerson td, table.NewPerson th {
+	font-size: 10px;
+}
+
+table.NewPerson th {
+	font-weight: normal;
+	text-align: right;
+}
+
+.StepGroup, .StepSubGroup {
+	background: url(/images/back_gstripes.gif);
+	border: 1px solid #d5d5d5;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 10px 0 15px 15px;
+	margin: 5px 0 30px 15px;
+}
+
+.StepSubGroup {
+	margin-top: -31px;
+}
+
+#LastStepGroup {
+	margin-bottom: 0;
+}
+
+.StepHelp {
+	font-size: 10px;
+	color: #666;
+	padding: 5px 0 0 0;
+	margin: 10px 15px 0 0;
+	border-top: 1px solid #ccc;
+}
+
+p.longurl {
+	line-height: 18px;
+}
+
+p.longurl a {
+	font-size: 10px;
+}
+
+p.Checkbox /* a checkbox and label after */ {
+	margin: 5px 0;
+}
+
+.StepButtons {
+	font-size: 11px;
+	margin: 15px 0 3px 15px;
+	text-align: left;
+}
+
+.InsideButton /* like "save and add another" */ {
+	margin: 10px 10px 0 0;
+	padding: 5px;
+}
+
+.SidebarSteps {
+	margin-bottom: 25px;
+}
+
+.SidebarSteps p {
+	margin-top: 3px;
+}
+
+.SidebarTip {
+	margin-bottom: 25px;
+}
+
+.SidebarTip p {
+	margin-top: 3px;
+}
+
+.SidebarTip h1 {
+	margin-bottom: 0;
+}
+
+
+/*-------------------------------------------------
+SCHEMES
+-------------------------------------------------*/
+
+.Schemes p {
+	margin: 30px 0;
+}
+
+ul.Schemes {
+	margin: 10px 0 0 0px;
+}
+
+ul.Schemes li {
+	border: none;
+	font-size: 11px;
+	color: #333;
+}
+
+.Preview {
+	background: #333;
+	padding: 15px 0 0 14px;
+	margin-top: 10px;
+	/* box model hack */
+	width: 364px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 350px;
+}
+
+html>body .Preview {
+	/* be nice to opera */
+	width: 350px;
+}
+
+p.FauxH1 {
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	color: #fc0;
+}
+
+p.Fauxh2 {
+	font-family: "Lucida Grande", arial, sans-serif;
+	padding: 0;
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	border: none;
+}
+
+.Preview ul {
+	height: 21px;
+	margin: 0;
+	padding-left: 0px;
+}
+
+.Preview ul li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	border: none;
+}
+	
+.Preview ul a:link, .Preview ul a:visited {
+	float: left;
+	background: #eaeac7;
+	font-size: 10px;
+	font-weight: normal;
+	padding: 3px 8px;
+	margin: 0 -1px 0 0;
+	border: 1px solid #333;
+	border-bottom: #eaeac7;
+	text-decoration: none;
+	color: #333;
+}
+
+.Preview ul a:link.current, .Preview ul a:visited.current {
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	color: #393;
+	font-weight: bold;
+}
+
+.Preview ul a:hover {
+	color: #000;
+	background: #ffc;
+}
+
+/*-------------------------------------------------
+ALERTS
+-------------------------------------------------*/
+
+.AlertGood {
+	text-align: left;
+	border-top: 1px solid #9c9;
+	border-bottom: 1px solid #9c9;
+	padding: 5px 5px 5px 30px;
+	font-size: 11px;
+	margin: -5px 0 15px 0;
+	background-color: #E2F9E3;
+	color: #060;
+	background: url(/images/alertgood_icon.gif) #E2F9E3 left no-repeat;
+}
+
+.AlertBad {
+	text-align: left;
+	font-weight: bold;
+	border-top: 1px solid #c99;
+	border-bottom: 1px solid #c99;
+	padding: 5px 5px 5px 27px;
+	font-size: 11px;
+	margin: -5px 0 15px 0;
+	background: url(/images/alertbad_icon.gif) #c00 left no-repeat;
+	color: #fff;
+}
+
+#DialogContainer div.AlertBad {
+	margin: 0 0 10px 0;
+}
+
+/*-------------------------------------------------
+DIALOG BOX
+-------------------------------------------------*/
+
+#DialogContainer {
+	float: none;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	vertical-align: middle;
+	width: 420px;
+	}
+
+.DialogBody {
+	margin: 0;
+	padding: 10px;
+	text-align: left;
+	border: 1px solid #ccc;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	background-color: #fff;
+	/* box model hack */
+	width: 500px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 478px;
+	}
+
+html>body .DialogBody {
+	/* be nice to opera */
+	width: 478px;
+}
+
+.DialogBody td {
+	font-size: 11px;
+}
+
+.DialogHeader {
+	background-color: #333;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	}	
+
+.DialogHeader h1 {
+	font-family: verdana;
+	margin: 0;
+	padding: 3px 0 3px 10px;
+	font-size: 10px;
+	color: #fff;
+	}	
+
+.DialogBody h1 {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	color: #f00;
+	}
+
+.DialogBody p.noundo {
+	font-size: 10px;
+	font-weight: normal;
+	color: #666;
+	}
+
+.ThePost {
+	margin: 10px 0 10px 0;
+	padding: 10px 10px 0 10px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	}
+
+.ThePost h1 {
+	padding: 0;
+	margin: 0;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+.additional {
+	color: #999;
+	font-size: 10px;
+	}
+
+.PrimaryAction {
+	font-size: 10px; /* <-- added by rjs */
+	margin: 10px 0 0 0;
+	padding: 5px 0 0 0;
+	border-top: 1px dotted #999;
+	text-align: right;
+	}
+
+.PrimaryAction input {
+	font-size: 10px;
+}
+
+/*-------------------------------------------------
+LOGIN DIALOG BOX
+-------------------------------------------------*/
+
+#FirmLogo {
+	text-align: center;
+	padding: 0 0 7px 0;
+}
+
+p.forgotpassword {
+	font-size: 10px;
+	color: #666;
+	clear: both;
+}
+
+p.username, p.password {
+	float: left;
+}
+
+p.username {
+	margin-right: 15px;
+}
+
+
+/*-------------------------------------------------
+LINK LISTS --- replace LinkBoxes
+-------------------------------------------------*/
+
+ul.LinkList {
+	padding: 0 0 0 10px;
+	margin: -5px 0 10px 15px;
+	border-left: #e0e0e0;
+	border-width: 0 0 0 1px;
+	border-style: none none none solid;
+}
+
+ul.LinkList li {
+	font-size: 11px;
+	border: none;
+	color: #888;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul li ul#EditLinkList li { /* link list on the edit post page */
+	padding: 0 0 0 10px;
+	margin: 10px 10px 10px 0;
+	color: #888;
+	border: none;
+	list-style: none;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------
+ARCHIVE STYLES
+-------------------------------------------------*/
+
+/* a div.Archive is one major time division (eg: month) */
+
+.Archive {
+	margin-bottom: 25px; 
+}
+
+.Archive h1 { 
+	margin: 0 0 5px 0;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 13px;
+	color: #666;
+}
+
+.Archive ul {
+	margin: 0;
+	padding: 0;
+}
+
+.Archive li {
+	font-size: 11px;
+	font-family: verdana;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+	padding: 0;
+	border: none;
+	color: #666;
+}
+
+.Archive li span.highlight {
+	color: #000;
+}
+
+li span.highlight {
+	color: #000;
+}
+
+
+/*-------------------------------------------------
+NEW FORM FOR NEW POST PROCESS
+-------------------------------------------------*/
+
+.NewForm {
+	padding: 10px;
+	background: #f0f0f0;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+}
+
+.NewForm h2 {
+	margin: 0;
+}
+
+.NewForm div {
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	font-family: "Lucida Grande", arial, sans-serif;
+}
+
+.NewForm div#title {
+	width: 250px;
+	float: left;
+}
+
+.NewForm div#title input {
+	width: 250px;
+	font-size: 12px;
+}
+
+.NewForm div#category {
+	margin-left: 260px;
+}
+
+.NewForm div#category span {
+	color: #999;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.NewForm div#post {
+	margin-top: 20px;
+	clear: both;
+}
+
+.NewForm div#post span {
+	color: #666;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.NewForm div#emailnotification {
+	padding: 5px 0 3px 0;
+	margin: 0 130px 0 0;
+	text-align: left;
+}
+
+.NewForm div#formatting {
+	margin: 0 5px 5px 0;
+	padding: 3px 0px 1px 3px;
+	background: #dcdcdc;
+	border-bottom: 1px dotted #ccc;
+}
+
+.NewForm div#formatting p {
+	font-size: 11px;
+	color: #666;
+	margin: 0 0 5px 0;
+	line-height: 12px;
+	font-weight: normal;
+}
+
+.NewForm div#button {
+	margin: 8px 0 0 0;
+	float: right;
+	width: 130px;
+}
+
+.NewForm div#post textarea {
+	width: 685px;
+	font-size: 12px;
+}
+
+
+/*-------------------------------------------------
+NEW POST ATTACHMENTS
+-------------------------------------------------*/
+
+li#UploadProgress {
+	background: #ffc;
+	color: #666;
+	font-size: 10px;
+	margin: 5px 0 0 0;
+	padding: 3px;
+}
+
+li#UploadProgress strong {
+	color: #000;
+	font-size: 11px;
+}
+
+#Attached {
+	margin: 0 10px;
+	padding: 15px;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background: url(/images/attached-bg.gif) repeat-x;
+}
+
+#Attached ul {
+	margin: 0;
+	padding: 0;
+}
+
+#Attached li {
+	color: #999;
+	border: none;
+	list-style: none;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#AttachFile table, #AttachLink table {
+	width: 100%;
+}
+
+#AttachFile {
+	background: #efefef;
+	padding: 5px 10px;
+	margin: 0 10px;
+	border-top: 1px dotted #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+#AttachFile td {
+	font-size: 11px;
+	vertical-align: top;
+}
+
+#AttachFile td span.help {
+	font-size: 9px;
+}
+
+#AttachLink {
+	border-top: 1px dotted #ccc;
+	background: #efefef;
+	padding: 5px 10px;
+	margin: 0 10px;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+#AttachLink td {
+	font-size: 11px;
+}
+
+#AttachLink td span.help {
+	font-size: 9px;
+}
+
+#AttachTabs {
+	margin: 0 10px 0 10px;
+	background: url(/images/attachtabs-bg.gif) top repeat-x;
+}
+
+#AttachTabs ul {
+	margin: 0;
+	padding: 0;
+}
+
+#AttachTabs ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#AttachTabs li a:link, #AttachTabs li a:visited {
+	float: left;
+	background: #999;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 4px 6px;
+	margin: 0 1px 0 0;
+	border: 1px solid #999;
+	border-top: none;
+	text-decoration: underline;
+	color: #fff;
+}
+
+#AttachTabs a:link.current, #AttachTabs a:visited.current {
+	text-decoration: none;
+	background: #efefef;
+	color: #333;
+}
+
+#AttachTabs a:hover {
+	color: #000;
+	background: #ffc;
+}
+
+
+/*-------------------------------------------------
+SIGNUP
+-------------------------------------------------*/
+
+#Listform ol {
+	padding: 0;
+	margin: 0 0 0 20px;
+}
+
+#Listform ul {
+	padding: 0;
+	margin: 0 0 0 5px;
+}
+
+#Listform li {
+	border-top: none;
+	font-size: 13px;
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 0 30px 0;
+	color: #090;
+}
+
+#Listform ol li {
+	list-style: decimal;
+}
+
+#Listform li div {
+	color: #333;
+	background: #f0f0f0;
+	margin: 0;
+	margin-top: 3px;
+	padding: 5px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana;
+}
+
+#Listform li div.upgrade {
+	color: #333;
+	background: #ffc;
+	margin: 0;
+	margin-top: 3px;
+	padding: 5px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana;
+}
+
+#Listform ul li div {
+	/* padding: 3px 3px 3px 0; */
+}
+
+#Listform li table th {
+	text-align: right;
+	font-weight: normal;
+}
+
+#Listform li div p {
+	margin: 0;
+	padding: 0;
+}
+
+#Listform li div p + p {
+	margin-top: 15px;
+}
+
+#Listform li div p + p.Checkbox {
+	margin: 5px 0;
+}
+
+#Listform li div.help {
+	color: #666;
+	background: #fff;
+	padding: 2px 0;
+}
+
+#Listform li div.helplong {
+	color: #666;
+	background: #fff;
+	width: 470px;
+	padding: 2px 0;
+}
+
+
+#Listform li table.NewLink th {
+	text-align: left;
+	font-weight: bold;
+}
+
+#Listform li table.NewLink td input.textfield {
+	width: 250px;
+}
+
+#Listform li h1 {
+	font-size: 14px;
+	color: #090;
+	margin-bottom: 0px;
+}
+
+#Listform li h2 {
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 0px;
+	padding: 0;
+	margin: 0;
+}
+
+#Listform li.action {
+	border-top: 2px solid #000;
+	margin-bottom: 0;
+	text-align: right;
+	padding-top: 8px;
+	font-size: 12px;
+}
+
+#TextileHelp {
+	color: #666;
+}
+
+
+#TextileHelp table {
+	margin-bottom: 0;
+}
+
+#TextileHelp table+h3 {
+	margin-top: 10px;
+}
+
+#TextileHelp table td {
+	font-size: 11px;
+	padding: 3px;
+	vertical-align: top;
+	border-top: 1px dotted #ccc;
+}
+
+#TextileHelp table td.arrow {
+	padding-right: 5px;
+	padding-left: 10px;
+	color: #999;
+}
+
+#TextileHelp table td.label {
+	font-weight: bold;
+	white-space: nowrap;
+	font-size: 11px;
+	padding-right: 15px;
+	color: #000;
+}
+
+#TextileHelp h3 {
+	font-size: 13px;
+	font-weight: bold;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+	padding: 5px 0 0 0;
+	color: #c00;
+}
+
+#TextileHelp p {
+	font-size: 10px;
+}
+
+#Listform li ul li {
+	font-size: 11px;
+	font-family: verdana;
+	color: #333;
+	font-weight: normal;
+	list-style: square;
+	margin: 0 0 5px 10px;
+}
+
+#Listform li ul li a.admin { /* hack to correct inheritence issue */
+	color: #f00;
+}
+
+
+/*-------------------------------------------------
+THINGS TO DO HELP BLOCK
+-------------------------------------------------*/
+
+.thingtodo {
+	width: 220px;
+	margin-right: 10px;
+	float: left;
+}
+
+#showhelp {
+	clear: left;
+	text-align: center;
+	margin: 0 0 0 512px;
+	background: #ffc;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	width: 132px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 120px;
+}
+
+
+/*-------------------------------------------------
+FADE EFFECT
+-------------------------------------------------*/
+
+#fade {
+	background-color: #ffff99;
+}
+
+
+/*-------------------------------------------------
+TO DO STUFF
+-------------------------------------------------*/
+
+table.todolist {
+	border-left: 1px solid #ccc;
+	margin-left: 10px;
+	width: 90%;
+}
+
+table.todolist td {
+	vertical-align: top;
+	font-size: 12px;
+	padding: 2px 3px;
+}
+
+h2.todo {
+	font-family: "Lucida Grande", arial, sans-serif;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h2.todo a:link, h2.todo a:visited {
+	color: #000;
+}
+
+h2.todo a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+h2.todo a.admin {
+	text-decoration: underline;
+	color: #f00;
+}
+
+h2.todo a.admin:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #f00;
+}
+
+.Privatetodo h2.todo {
+	margin-top: 5px;
+}
+
+img.move {
+}
+
+table.todolist td.complete {
+	vertical-align: top;
+	font-size: 11px;
+	color: #888;
+	padding: 2px 0;
+}
+
+table.todolist td.complete a {
+	color: #444;
+}
+
+table.todolist td.complete a:hover {
+	color: #fff;
+	background: #333;
+}
+
+
+/*-------------------------------------------------
+HELP SECTION
+-------------------------------------------------*/
+
+ul.helpmenu1 {
+	padding: 3px 0 4px 0;
+}
+
+ul.helpmenu2 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #dcdcdc;
+	margin-bottom: 15px;
+}
+
+ul.helpmenu1 li,
+ul.helpmenu2 li {
+	font-family: "Lucida Grande", arial, sans-serif;
+	display: inline;
+	font-weight: bold;
+}
+
+ul.helpmenu1 li a:link,
+ul.helpmenu1 li a:visited,
+ul.helpmenu2 li a:link,
+ul.helpmenu2 li a:visited {
+	font-weight: normal;
+}
+
+ul.helpmenu1 li {
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+ul.helpmenu2 li {
+	font-size: 12px;
+	padding-right: 10px;
+}
+
+p.screenshot img {
+	background: #fff;
+	margin-bottom: 10px;
+	border: 1px solid #dcdcdc;
+	padding: 5px;
+}
+
+img.screenshot {
+	padding: 5px;
+	border: 1px solid #dcdcdc;
+	background: #fff;
+}
+
+div.answer {
+	padding: 10px 10px 0px 10px;
+	border: 1px solid #ccc;
+	border-top: none;
+	margin-bottom: 20px;
+	display: none;
+	background: #efefef;
+}
+
+#otherquestions div.answer {
+	border: none;
+	margin-bottom: 20px;
+	padding-top: 4px;
+	display: none;
+	background: #fff;
+}
+
+div.closeanswer {
+	background: url(/images/closeanswer.gif) no-repeat left;
+	background: #666;
+	margin: 0 -10px;
+	padding: 3px 10px 3px 20px;
+	color: #fff;
+	font-size: 11px;
+}
+
+#otherquestions div.answer div.closeanswer {
+	background: #fff none;
+	color: #000;
+	font-size: 11px;
+}
+
+div.closeanswer a:link, div.closeanswer a:visited {
+	color: #fff;
+}
+
+div.closeanswer a:hover {
+	color: #fff;
+	background: #000;
+}
+
+#otherquestions div.answer div.closeanswer a:link, 
+#otherquestions div.answer div.closeanswer a:visited  {
+	color: #333;
+}
+
+#otherquestions div.answer div.closeanswer a:hover {
+	color: #fff;
+	background: #000;
+}
+
+h2.question {
+	font-size: 14px;
+	margin: 5px 0px 0px 0px;
+	padding: 5px 5px 5px 10px;
+	border: 1px solid #ccc;
+	background: #f0f0f0;
+}
+
+#otherquestions h2.question {
+	border: none;
+	font-size: 12px;
+}
+
+div.answer p {
+	margin: 0 0 10px 0;
+}
+
+
+/*-------------------------------------------------
+POPUP
+-------------------------------------------------*/
+
+#Popup {
+	text-align: left;
+}
+
+#Popup #Header {
+	border: none;
+	padding-left: 15px;;
+}
+
+#Popup #Header h2 {
+	font-size: 16px;
+	padding: 0;
+	margin: 0px;
+}
+
+#Popup p {
+	text-align: left;
+}
+
+#Popup #Body {
+	margin: 0 15px;
+}
+
+#Popup #close {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+/*-------------------------------------------------
+DASHBOARD LOG
+-------------------------------------------------*/
+
+span.projectflag {
+	color: #666;
+	font-size: 9px;
+}
+
+span.projectflag span.client {
+	color: #000;
+}
+
+table.fresh {
+	margin-bottom: 10px;
+}
+
+table.fresh td {
+	font-size: 10px;
+	padding: 0;
+}
+
+table.fresh td.icon {
+	padding: 0 3px;
+}
+
+table.fresh td.title {
+	color: #666;
+	font-size: 9px;
+}
+
+table.fresh td.title a {
+	font-size: 10px;
+}
+
+a.messagelink:link, a.messagelink:visited {
+	color: #000;
+	font-weight: bold;
+}
+
+a.messagelink:hover {
+	color: #fff;
+}
+
+table.fresh td.title img {
+	padding: 0 0 0 3px;
+}
+
+table.fresh tr.shade td {
+	background: #e5e5e5;
+}
+
+table.fresh td.project {
+	padding-top: 5px;
+}
+
+
+/*-------------------------------------------------
+PROJECT LOG
+-------------------------------------------------*/
+
+table.latest {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+table.latest td {
+	font-size: 12px;
+	padding: 3px 0 3px 0;
+	color: #000;
+	vertical-align: top;
+}
+
+table.latest td.icon {
+	padding: 5px 10px 0 10px;
+	font-size: 9px;
+	width: 40px;
+	color: #333;
+	text-align: right;
+}
+
+table.latest tr.shade td {
+	background: #e5e5e5;
+}
+
+table.latest span.prep {
+	font-size: 10px;
+	color: #999;
+}
+
+table.latest td.title span.late, table.latest td.title span.ontime {
+	color: #c00;
+	font-size: 9px;
+	padding: 1px 2px;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+table.latest td.title span.ontime {
+	color: #390;
+}
+
+table.latest p {
+	font-size: 10px;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	line-height: 12px;
+}
+
+table.latest td blockquote {
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+table.latest p.excerpt {
+	color: #666;
+	margin: 3px 0 3px 0px;
+}
+
+table.latest p.responsible {
+	color: #666;
+}
+
+table.latest td.title span.list, table.latest td.title span.list a {
+	font-size: 10px;
+	color: #999;
+}
+
+/*-------------------------------------------------
+PERMISSIONS TEMP - JBF
+-------------------------------------------------*/
+
+h2.company {
+	padding: 0 0 2px 0;
+	margin: 0;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+table.files {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+table.files td {
+	padding: 5px;
+}
+
+table.files th {
+	padding: 2px;
+	font-size: 11px;
+	background-color: #666;
+	color: #fff;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+table.files td.person {
+	font-size: 11px;
+	color: #000;
+	white-space: nowrap;
+	border-top: 1px solid #efefef;
+	font-weight: bold;
+}
+
+table.files td.attributes {
+	font-size: 11px;
+	border-top: 1px solid #efefef;
+	white-space: nowrap;
+	border-left: 1px dotted #ccc;
+}
+
+table.files td.clientname {
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	padding: 0 0 2px 0;
+}
+
+table.files td.note {
+	padding: 10px;
+	font-size: 11px;
+	color: #999;
+	border-left: 1px solid #efefef;
+}
+
+/*-------------------------------------------------
+FILE TEMP - JBF
+-------------------------------------------------*/
+
+table.files {
+	border: 0;
+}
+
+table.files td {
+	vertical-align: top;
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+table.files th {
+	text-align: left;
+	padding: 2px 5px;
+	font-size: 10px;
+	background-color: #666;
+	color: #fff;
+	font-weight: bold;
+}
+
+table.files td.date {
+	padding: 20px 0 2px 0;
+	font-size: 9px;
+	font-style: italic;
+	line-height: 12px;
+	color: #000;
+}
+
+table.files td.icon {
+	width: 32px;
+}
+
+table.files td.details, td.description {
+	padding-right: 20px;
+}
+
+table.files td.details {
+	white-space: nowrap;
+}
+
+table.files td.description {
+	border-left: 1px dotted #ccc;
+	font-size: 10px;
+	color: #666;
+	line-height: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+table.files td h1 {
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+table.files td h2 {
+	font-size: 10px;
+	color: #666;
+	line-height: 14px;
+	font-weight: normal;
+	font-style: normal;
+	padding: 0;
+	margin: 0 0 2px 0;
+}
+
+table.files td h3 {
+	font-size: 9px;
+	line-height: 12px;
+	font-weight: normal;
+	font-style: italic;
+	color: #999;
+	padding: 0;
+	margin: 0;
+}
+
+table.files tr.shaded td {
+	background-color: #f5f5f5;
+}
+
+
+
+.boldtext {  font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #333333}
+.panel_border {  border: 1px #0066FF solid}
+.boldBlue { 
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 11px; 
+font-weight: bold; 
+color: #6F7BBA
+}
+
+.boldWhite { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #FFFFFF}
+
+

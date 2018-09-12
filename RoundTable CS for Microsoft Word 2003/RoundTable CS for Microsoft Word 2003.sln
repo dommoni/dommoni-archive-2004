@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundTableWordAddin", "RoundTableWordAddin\RoundTableWordAddin.csproj", "{14813611-37D9-4CFB-8EE2-BF7CC7B606C9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RoundTableWordAddinSetup", "RoundTableWordAddin\RoundTableWordAddinSetup\RoundTableWordAddinSetup.vdproj", "{B491EF79-681B-42B8-B703-6FC3AA1407B9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{14813611-37D9-4CFB-8EE2-BF7CC7B606C9}.Debug.ActiveCfg = Debug|.NET
+		{14813611-37D9-4CFB-8EE2-BF7CC7B606C9}.Debug.Build.0 = Debug|.NET
+		{14813611-37D9-4CFB-8EE2-BF7CC7B606C9}.Release.ActiveCfg = Release|.NET
+		{14813611-37D9-4CFB-8EE2-BF7CC7B606C9}.Release.Build.0 = Release|.NET
+		{B491EF79-681B-42B8-B703-6FC3AA1407B9}.Debug.ActiveCfg = Debug
+		{B491EF79-681B-42B8-B703-6FC3AA1407B9}.Release.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

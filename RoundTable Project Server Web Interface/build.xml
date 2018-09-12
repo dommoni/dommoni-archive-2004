@@ -1,0 +1,119 @@
+
+<project name="WebUI" default="init">
+    <property name="build.dir" value="build" />
+    <property name="ini.dir" value="ini" />
+    <property name="lib.dir" value="lib" />
+    <property name="src.dir" value="servlet" />
+    <property name="war.file" value="WebUI.war" />
+	<property name="tomcat.home" value="D:\Brian\Java\Tomcat\jakarta-tomcat-5.0.28" />
+	<property name="java.home" value="C:\jdk1.5.0_03" />
+		
+    <property name="classpath" value="tmp-war/WEB-INF;${lib.dir}/servlet-api.jar;${lib.dir}/ProjectServerAPI.jar;${lib.dir}/dom4j.jar;${lib.dir}/jasper-compiler.jar;${lib.dir}/jasper-runtime.jar;${lib.dir}/jsp-api.jar;${lib.dir}/commons-logging.jar;${lib.dir}/keypointPNGEncoder.jar;${lib.dir}/jfreechart-1.0.0-pre2.jar;${lib.dir}/jcommon-1.0.0-pre2.jar;${lib.dir}/gifEncoder.jar;${lib.dir}/myfaces.jar;${lib.dir}/myfaces-jsf-api.jar" />
+
+    <target name="init">
+        <mkdir dir="${build.dir}" />
+        
+        <mkdir dir="tmp-war" />
+        <mkdir dir="tmp-war/ini" />
+        <mkdir dir="tmp-war/WEB-INF" />
+        <mkdir dir="tmp-war/WEB-INF/classes" />
+        <mkdir dir="tmp-war/WEB-INF/lib" />
+        
+        <copy file="${ini.dir}/web.xml" todir="tmp-war/WEB-INF" />
+    </target>
+
+    <target name="build" depends="init">
+    	<javac debug="on" srcDir="${src.dir}" destDir="${build.dir}" classpath="${classpath}" source="1.4"/>
+    	
+    	<!-- JSPC Stuff.. -->
+    	<mkdir dir="jsp-java" />
+        <jspc srcdir="src"
+              destdir="jsp-java"
+              compiler="jasper41"
+              package="org.apache.jsp"
+              classpath="${classpath}"
+              verbose="1"
+              uribase="tmp-war/WEB-INF"
+              webinc="temp.xml">
+            <include name="**/*.jsp" />
+        </jspc>
+    	
+        <!--<taskdef classname="org.apache.jasper.JspC" name="jasper2"> 
+          
+        	<classpath id="jspc.classpath"> 
+            <pathelement location="${java.home}/lib/tools.jar"/>
+        		
+            <fileset dir="${tomcat.home}/bin"> 
+              <include name="*.jar"/> 
+            </fileset> 
+        		
+            <fileset dir="${tomcat.home}/server/lib"> 
+              <include name="*.jar"/> 
+            </fileset> 
+            <fileset dir="${tomcat.home}/common/lib"> 
+              <include name="*.jar"/> 
+            </fileset> 
+          </classpath>
+        </taskdef>
+         
+
+        <jasper2 
+        	     validateXml="false"
+        	     uriroot="tmp-war"
+        	     jspFiles="./src"
+                 outputDir="jsp-java" />
+      -->
+    	<javac debug="on" srcDir="jsp-java" destDir="${build.dir}" classpath="${classpath};${build.dir}" source="1.4" />
+    
+    	<!--<delete dir="jsp-java" />-->
+    	
+    </target>
+
+
+    <!--
+    WAR Target - Creates the WAR File for deployment to a Web Container.
+    
+    -->
+    <target name="war" depends="build">
+        
+
+        <!--<copy todir="tmp-war">
+            <fileset dir="src"/>
+        </copy>-->
+        <copy todir="tmp-war">
+            <fileset dir="src">
+            	<exclude name="**/*.jsp" />
+            </fileset>
+        </copy>
+
+        <copy todir="tmp-war/WEB-INF/lib">
+            <fileset dir="${lib.dir}">
+                <exclude name="servlet-api.jar" /> 
+            </fileset>
+        </copy>
+
+        <copy todir="tmp-war/WEB-INF/classes">
+            <fileset dir="${build.dir}" />
+        </copy>
+
+        
+
+        <copy file="${ini.dir}/ui-configuration.xml" todir="tmp-war/WEB-INF" />
+
+		<copy file="${ini.dir}/server-configuration.xml" todir="tmp-war/ini" />
+
+        <jar jarFile="${war.file}" baseDir="tmp-war" />
+
+        <delete dir="tmp-war" />
+    </target>
+
+	<target name="dist">
+    </target>
+    
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete file="${war.file}" />
+        
+        <delete dir="jsp-java" />
+    </target>
+</project>

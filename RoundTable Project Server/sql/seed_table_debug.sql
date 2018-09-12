@@ -1,0 +1,1 @@
+insert into debug (do_debug) values (0)

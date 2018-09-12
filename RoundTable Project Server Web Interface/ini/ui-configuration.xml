@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE configuration [
+<!ELEMENT configuration (pagelinks,texts,operationmenus,menus)>
+<!ELEMENT pagelinks (pagelink+)>
+<!ELEMENT pagelink EMPTY>
+<!ATTLIST pagelink
+    name CDATA #REQUIRED
+    value CDATA #REQUIRED >
+<!ELEMENT texts (text+)>
+<!ELEMENT text (#PCDATA)>
+<!ATTLIST text
+    name CDATA #REQUIRED>
+<!ELEMENT operationmenus (operationmenu+)>
+<!ELEMENT operationmenu (operationmenuitem+)>
+<!ELEMENT operationmenuitem EMPTY>
+<!ATTLIST operationmenuitem
+    name CDATA #REQUIRED
+    link CDATA #REQUIRED
+    state CDATA #REQUIRED>
+<!ELEMENT menus (menu+)>
+<!ELEMENT menu (menutitem+)>
+<!ELEMENT menuitem (title,ordinal,link)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT ordinal (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+]> 
+
+<configuration>
+    <pagelinks>
+       <!-- Admin Links -->
+       <pagelink name="pl.admin.main" value="adminMain.jsp" />
+       <pagelink name="pl.admin.projects" value="adminProjects.jsp" />
+       <pagelink name="pl.admin.accounts" value="adminAccounts.jsp" />
+       
+       <!-- User Links -->
+       <pagelink name="pl.main.meetings" value="meetings.jsp" />
+       <pagelink name="pl.main.meetings.createmeeting" value="createMeeting.jsp" />
+    </pagelinks>
+    
+    
+    <texts>
+       <!-- General Texts -->
+       <text name="title">RoundTable Collaboration Environment</text>
+    
+       <!-- Admin Texts -->
+       <text name="admin.main.header"></text>
+       <text name="admin.projects.header"></text>
+       <text name="admin.accounts.header"></text>
+       <text name="admin.welcome.message">This is the system administration interface. From here, you can do anything. If your a member of a project, you can begin working in that project by clicking on the "Open a Project" link to the right.</text>
+       <text name="login.failure">Login failed, try again.</text>
+       <text name="copyright.notice">Copyright (c) 2004 Dommoni Corporation.</text>
+    </texts>
+    
+    
+    <operationmenus>
+       <!--<operationmenu name="om.project.workspace">
+           <operationmenuitem name="Open a Project" link="pl.select.projects" state="WORKSPACE_NOT_SELECTED" />
+           <operationmenuitem name="Close Project" link=  -->
+    
+       <operationmenu name="om.admin.accounts">
+          <operationmenuitem name="Create an Account" link="pagelink.name" state="ANY" />
+       </operationmenu>
+    </operationmenus>
+    
+    
+    <menus>
+        <!-- 
+            main menu that appears near the top of the UI. 
+        -->
+        <menu name="mainmenu">
+            <menuitem>
+                <title>Main</title>
+                <ordinal>1</ordinal>
+                <link>projectMain.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Members</title>
+                <ordinal>2</ordinal>
+                <link>projectMembers.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Discussions</title>
+                <ordinal>5</ordinal>
+                <link>projectDiscussions.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Documents</title>
+                <ordinal>3</ordinal>
+                <link>projectDocuments.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Forums</title>
+                <ordinal>7</ordinal>
+                <link>projectForums.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Meetings</title>
+                <ordinal>6</ordinal>
+                <link>projectMeetings.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Tasks</title>
+                <ordinal>4</ordinal>
+                <link>projectTodos.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Schedules</title>
+                <ordinal>5</ordinal>
+                <link>projectSchedules.jsp</link>
+            </menuitem>
+            
+            <!--
+            <menuitem>
+                <title>Blogs</title>
+                <ordinal>8</ordinal>
+                <link>projectBlogs.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Schedule</title>
+                <ordinal>9</ordinal>
+                <link>projectSchedule.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Calendar</title>
+                <ordinal>10</ordinal>
+                <link>projectCalendar.jsp</link>
+            </menuitem>
+            
+            <menuitem>
+                <title>Contacts</title>
+                <ordinal>11</ordinal>
+                <link>projectContacts.jsp</link>
+            </menuitem> -->
+        </menu>
+    
+    
+        <!-- 
+            Admin Menu that appears when a user
+            logs in with an Admin Account. 
+        -->
+        <menu name="adminmenu">
+            
+            <!-- Admin Main -->
+            <menuitem>
+                <title>Admin Main</title>
+                <ordinal>1</ordinal>
+                <link>adminMain.jsp</link>
+            </menuitem>
+        
+    
+            <!-- Projects -->
+            <menuitem>
+                <title>Projects</title>
+                <ordinal>2</ordinal>
+                <link>adminProjects.jsp</link>
+            </menuitem>
+        
+            
+            <!-- Accounts -->
+            <menuitem>
+                <title>Accounts</title>
+                <ordinal>3</ordinal>
+                <link>adminAccounts.jsp</link>
+            </menuitem>
+
+			<!-- Logs -->
+            <menuitem>
+                <title>Logging</title>
+                <ordinal>4</ordinal>
+                <link>adminLogs.jsp</link>
+            </menuitem>
+
+			<!-- Configuration 
+            <menuitem>
+                <title>Configuration</title>
+                <ordinal>5</ordinal>
+                <link>adminConfiguration.jsp</link>
+            </menuitem>-->
+            
+            <!-- Sessions: Displays currently active sessions -->
+            <!--<menuitem>
+                <title>Sessions</title>
+                <ordinal>4</ordinal>
+                <link>adminSessions.jsp</link>
+            </menuitem>-->
+        </menu>
+        
+              <!-- 
+            Admin Menu that appears when a user
+            logs in with an Admin Account. 
+        -->
+        <menu name="managermenu">
+            <!-- Projects -->
+            <menuitem>
+                <title>Projects</title>
+                <ordinal>1</ordinal>
+                <link>adminProjects.jsp</link>
+            </menuitem>
+        </menu>
+    </menus>
+</configuration>

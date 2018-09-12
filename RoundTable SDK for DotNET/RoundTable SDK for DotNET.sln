@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundTable SDK for DotNET", "RoundTable SDK for DotNET.csproj", "{107034FD-EDE5-4071-AF19-7077003FF51B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testCases", "testCases\testCases.csproj", "{1D8F5D7A-38EE-4DDE-B5E0-74E47A2FBEB2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{107034FD-EDE5-4071-AF19-7077003FF51B}.Debug.ActiveCfg = Debug|.NET
+		{107034FD-EDE5-4071-AF19-7077003FF51B}.Debug.Build.0 = Debug|.NET
+		{107034FD-EDE5-4071-AF19-7077003FF51B}.Release.ActiveCfg = Release|.NET
+		{107034FD-EDE5-4071-AF19-7077003FF51B}.Release.Build.0 = Release|.NET
+		{1D8F5D7A-38EE-4DDE-B5E0-74E47A2FBEB2}.Debug.ActiveCfg = Debug|.NET
+		{1D8F5D7A-38EE-4DDE-B5E0-74E47A2FBEB2}.Debug.Build.0 = Debug|.NET
+		{1D8F5D7A-38EE-4DDE-B5E0-74E47A2FBEB2}.Release.ActiveCfg = Release|.NET
+		{1D8F5D7A-38EE-4DDE-B5E0-74E47A2FBEB2}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

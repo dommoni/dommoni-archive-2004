@@ -1,0 +1,3 @@
+Alias: sskey
+Pass: roundtable
+storepass: roundtablepub

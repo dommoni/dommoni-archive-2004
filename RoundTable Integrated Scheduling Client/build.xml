@@ -1,0 +1,52 @@
+<project>
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="build" />
+	<property name="classpath" value="lib/forms-1.0.5.jar;lib/looks-1.3.1.jar;lib/ProjectServerAPI.jar" />
+	
+	<target name="init">
+		<mkdir dir="build" />	
+	</target>
+	
+	<target name="build" depends="init">
+		<javac 
+			srcDir="${src.dir}" 
+			destDir="${build.dir}" 
+			classpath="${classpath}"
+			target="1.4"
+			source="1.4"
+		/>
+		
+		<!-- Copy Files... -->
+		<copy file="images\NewTask_ICO.jpg" toDir="${build.dir}" />
+		<copy file="images\DeleteTask_ICO_FW.jpg" toDir="${build.dir}" />
+		<copy file="images\SaveSchedule_ICO.jpg" toDir="${build.dir}" />
+		<copy file="images\ZoomIn_ICO.jpg" toDir="${build.dir}" />
+		<copy file="images\ZoomOut_ICO.jpg" toDir="${build.dir}" />
+		<copy file="images\TmpClCtl_ICO_FW.jpg" toDir="${build.dir}" />
+		<copy file="images\TmpClCtl_ICO_FW_sm.jpg" toDir="${build.dir}" />
+		<copy file="images\CalendarCtl_ICO.jpg" toDir="${build.dir}" />
+		<copy file="images\CalendarCtl_ICO_BLUE.jpg" toDir="${build.dir}" />
+		
+		<copy file="images\TaskResources_ICO_LG.jpg" toDir="${build.dir}" />
+		<copy file="images\TaskResources_ICO_MD.jpg" toDir="${build.dir}" />
+		<copy file="images\TaskResources_ICO_MDSM.jpg" toDir="${build.dir}" />
+		<copy file="images\TaskResources_ICO_SM_14x14.jpg" toDir="${build.dir}" />
+		
+		<copy file="src\blue_grad.jpg" toDir="${build.dir}" />
+		<copy file="src\column_gradient.jpg" toDir="${build.dir}" />
+		<copy file="src\column_gradient_spacer.jpg" toDir="${build.dir}" />
+		<copy file="src\h0_sn100_l60.jpg" toDir="${build.dir}" />
+		<copy file="src\lblue_grad.jpg" toDir="${build.dir}" />
+	</target>
+	
+	<target name="jar" depends="build">
+		<jar basedir="${build.dir}" destfile="SharedSchedulingClient.jar" />
+	</target>
+	
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete file="SharedSchedulingClient.jar" />
+		<delete file="ss_SharedSchedulingClient.jar" />
+	</target>
+
+</project>

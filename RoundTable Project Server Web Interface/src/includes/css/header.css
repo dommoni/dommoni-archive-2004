@@ -1,0 +1,51 @@
+#Header {
+	background-color: #C7E5EA;
+}
+
+#Header h1 {
+	color: #000;
+}
+
+#Header h3, #Header h3 a:link, #Header h3 a:visited {
+	color: #5A949E;
+}
+
+#Header h3 a:hover {
+	color: #D6FFFF;
+	background-color: #1E505A;
+}
+
+#Header h3 a.current:link, #Header h3 a.current:visited {
+	color: #000;
+}
+
+#Header h3 a.current:hover {
+	color: #000;
+	background-color: #366AB3;
+}
+
+#Header h1 a:link, #Header h1 a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#Header h1 a:hover {
+	color: #000;
+	background-color: #C7E5EA;
+	text-decoration: underline;
+}
+
+#Header h2 {
+	color: #5A949E;
+}
+
+#Header h2 a:link, #Header h2 a:visited {
+	color: #5A949E;
+	text-decoration: none;
+}
+
+#Header h2 a:hover {
+	color: #5A949E;
+	background-color: #C7E5EA;
+	text-decoration: underline;
+}

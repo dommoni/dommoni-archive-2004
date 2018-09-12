@@ -1,0 +1,20 @@
+<Project name="LFG Installer" standardNamespace="LFG_Installer" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="WIX">
+  <Contents>
+    <File name=".\Setup.wxs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\license.rtf" subtype="Code" buildaction="Nothing" dependson="" data="" />
+    <File name=".\RoundTable_LFG.MainForm.resources" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+  </Contents>
+  <References />
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="True" name="Debug">
+    <Output directory="..\bin\Debug" assembly="LFG Installer" executeScript="" executeBeforeBuild="" executeAfterBuild="" executeBeforeBuildArguments="" executeAfterBuildArguments="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="True" name="Debug">
+      <Output directory="..\bin\Debug" assembly="LFG Installer" executeScript="" executeBeforeBuild="" executeAfterBuild="" executeBeforeBuildArguments="" executeAfterBuildArguments="" />
+    </Configuration>
+    <Configuration runwithwarnings="True" name="Release">
+      <Output directory="..\bin\Release" assembly="LFG Installer" executeScript="" executeBeforeBuild="" executeAfterBuild="" executeBeforeBuildArguments="" executeAfterBuildArguments="" />
+    </Configuration>
+  </Configurations>
+</Project>

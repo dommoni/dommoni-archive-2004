@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<!-- 
+RoundTableFieldMappings.xml -- SAMPLE FILE
+
+The following is a sample RoundTable Field Mappings Definition File.
+Mapping Defintions provide a bridge between Microsoft Office User-Properties
+and RoundTable Custom-Fields and Named-Collections. The following file
+defines both a mapping for Named-Collection Templates in the 
+"templateDefinition" element with that templates respective fields.
+
+This file MUST be named "RoundTableFieldMappings.xml" on the client
+installation in order to be processed by the Office Addin.
+
+Copyright (c) 2005 - Dommoni. All rights reserved.
+-->	
+<roundtableMappings>
+	<templateDefination tag="template_ref" displayName="Displayed in RT" description="Authors description for the template." >
+		<templateFieldDefinition tag="user-property_name" name="RoundTable Name" type="INTEGER" ordinal="1" hidden="no" description="" />
+		<templateFieldDefinition tag="user-property_name1" name="RoundTable Name1" type="STRING" ordinal="2" hidden="no" description="" />
+		<templateFieldDefinition tag="user-property_name2" name="RoundTable Name2" type="INTEGER" ordinal="3" hidden="no" description="" />
+		<templateFieldDefinition tag="user-property_name3" name="RoundTable Name3" type="STRING" ordinal="4" hidden="no" description="" />
+	</templateDefination>
+	
+	<fieldDefinition tag="cf_tag" name="CustomField Name" type="INTEGER" ordinal="1" hidden="no" />
+</roundtableMappings>

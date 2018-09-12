@@ -1,0 +1,11 @@
+
+<faces-config>
+	
+	<!-- LoginBacking Bean -->
+	<managed-bean>
+		<managed-bean-name>loginBacking</managed-bean-name>
+		<managed-bean-class>jsfspike.LoginBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+</faces-config>

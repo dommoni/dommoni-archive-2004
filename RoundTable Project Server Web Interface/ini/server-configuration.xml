@@ -1,0 +1,4 @@
+<properties>
+	<projectServerIpAddress>127.0.0.1</projectServerIpAddress>
+	<projectServerPort>8080</projectServerPort>
+</properties>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<!-- Mar-Con Templates and Fields Definition File. -->
+
+<roundtableMappings>
+	<templateDefinition tag="marcon_form" displayName="Mar-Con Form">
+		<templateFieldDefinition tag="Customer"	name="Customer" type="STRING" />
+		<templateFieldDefinition tag="DeliveryTime" name="Deliver Time" type="STRING" />
+		<templateFieldDefinition tag="Foreman" name="Foreman" type="STRING" />
+		<templateFieldDefinition tag="JobAddress" name="Address" type="STRING" />
+		<templateFieldDefinition tag="JobCity" name="City" type="STRING" />
+		<templateFieldDefinition tag="JobNumber" name="Job-Number" type="STRING" />
+		<templateFieldDefinition tag="Mastic" name="Mastic" type="STRING" />
+		<templateFieldDefinition tag="MaterialType" name="Material-Type" type="STRING" />
+		<templateFieldDefinition tag="PhoneNumber" name="Phone" type="STRING" />
+		<templateFieldDefinition tag="PONumber" name="P.O. Number" type="STRING" />
+		<templateFieldDefinition tag="RegOrTLock" name="Reg or T-Lock" type="STRING" />
+		<templateFieldDefinition tag="RingsAndCovers" name="Rings and Covers" type="STRING" />
+	</templateDefinition>
+	
+	<templateDefinition tag="randc_form" displayName="R &amp; C Form" >
+		<templateFieldDefinition tag="rcConcrete" name="Concrete" type="STRING" />
+		<templateFieldDefinition tag="rcForeman" name="Foreman" type="STRING" />
+		<templateFieldDefinition tag="Phone" name="Phone" type="STRING" />
+		<templateFieldDefinition tag="rcJobNumber" name="Job Number" type="STRING" />
+		<templateFieldDefinition tag="rcPoNumber" name="P.O. Number" type="STRING" />
+		<templateFieldDefinition tag="rcCustomer" name="Customer" type="STRING" />
+		<templateFieldDefinition tag="rcNumberOfManhole" name="# Man Hole" type="STRING" />
+		<templateFieldDefinition tag="rcRingsAndCovers" name="Rings and Covers" type="STRING" />
+		<templateFieldDefinition tag="rcMastic" name="Mastic" type="STRING" />
+		<templateFieldDefinition tag="rcDayTimeOfPour" name="Day/Time of Pour" type="STRING" />
+		<templateFieldDefinition tag="rcPipeSize" name="Pipe Size" type="STRING" />
+		<templateFieldDefinition tag="rcManHoleType" name="M.H. Type" type="STRING" />
+		<templateFieldDefinition tag="rcRegOrTLock" name="Reg or T-Lock" type="STRING" />
+		<templateFieldDefinition tag="rcSpl" name="Spl." type="STRING" />
+		<templateFieldDefinition tag="rcJobAddress" name="Address" type="STRING" />
+		<templateFieldDefinition tag="rcCity" name="City" type="STRING" />
+	</templateDefinition>
+	
+	<templateDefinition tag="willcall_form" displayName="Will-Call Form">
+		<templateFieldDefinition tag="Foreman" name="Foreman" type="STRING" />
+		<templateFieldDefinition tag="JobNumber" name="Job Number" type="STRING" />
+		<templateFieldDefinition tag="PhoneNumber" name="Phone" type="STRING" />
+		<templateFieldDefinition tag="PONumber" name="P.O. Number" type="STRING" />
+		<templateFieldDefinition tag="Customer" name="Customer" type="STRING" />
+		<templateFieldDefinition tag="RingsAndCovers" name="Rings and Covers" type="STRING" />
+		<templateFieldDefinition tag="MaterialType" name="Material Type" type="STRING" />
+		<templateFieldDefinition tag="Mastic" name="Mastic" type="STRING" />
+		<templateFieldDefinition tag="RegOrTLock" name="Reg or T-Lock" type="STRING" />
+	</templateDefinition>
+</roundtableMappings>

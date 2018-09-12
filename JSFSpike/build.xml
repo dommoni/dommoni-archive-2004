@@ -1,0 +1,28 @@
+<project>
+	<target name="b" >
+		<mkdir dir="tmp" />
+		<mkdir dir="tmp/WEB-INF" />
+		<mkdir dir="tmp/WEB-INF/lib" />
+		<mkdir dir="tmp/WEB-INF/classes" />
+		
+		<copy todir="tmp/WEB-INF/lib">
+			<fileset dir="lib" />
+		</copy>
+		
+		<copy todir="tmp">
+			<fileset dir="web" />
+		</copy>
+				
+		
+		<copy file="ini/web.xml" todir="tmp/WEB-INF" />
+		<copy file="ini/faces-config.xml" todir="tmp/WEB-INF" />
+		
+		
+		
+		<javac srcdir="src" destdir="tmp/WEB-INF/classes" classpath="lib/myfaces-all.jar;lib/ProjectServerAPI.jar" />
+		
+		<jar basedir="tmp" destfile="jsfspike.war"  />
+		
+		<delete dir="build" />
+	</target>
+</project>

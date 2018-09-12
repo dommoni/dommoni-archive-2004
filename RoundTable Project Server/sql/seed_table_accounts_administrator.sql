@@ -1,0 +1,1 @@
+insert into accounts (name,username,password,account_type) values ('Administrator', 'administrator', 'dommoni', 1)

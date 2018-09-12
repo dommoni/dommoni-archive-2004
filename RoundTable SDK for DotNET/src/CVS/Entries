@@ -1,0 +1,36 @@
+/Account.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/AccountContact.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/AccountProfile.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/AccountSettings.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/AccountType.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/Announcement.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/BinaryAttachment.cs/1.1/Sat Mar 26 17:48:44 2005/-kkv/
+/Comment.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/CommentAttachment.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/Discussion.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/DiscussionMessage.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/Document.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/DocumentType.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/EventLogEntry.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/Forum.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/ForumReply.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/Meeting.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/MeetingAgendaItem.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/MeetingFollowupItem.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/MeetingNoteItem.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/Notification.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/NotificationContext.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/NotificationContextObject.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/NotificationObjectRegistry.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/NotificationType.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/ObjectAttachment.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/ProjectServerConnection.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/RecentChange.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/Session.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/SessionLogEntry.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/SessionType.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+/ToDo.cs/1.1/Sat Mar 26 17:48:46 2005/-kkv/
+D/interfaces////
+D/services////
+/Project.cs/1.2/Wed Mar 30 21:24:12 2005/-kkv/
+/ToDoStatus.cs/1.2/Wed Mar 30 21:24:12 2005/-kkv/

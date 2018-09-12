@@ -1,0 +1,23 @@
+<Combine fileversion="1.0" name="RoundTable LFG" description="">
+  <StartMode startupentry="RoundTable LFG" single="True">
+    <Execute entry="RoundTable LFG" type="None" />
+    <Execute entry="LFG Installer" type="None" />
+    <Execute entry="RoundTable LFB" type="None" />
+  </StartMode>
+  <Entries>
+    <Entry filename=".\.\RoundTable LFG.prjx" />
+    <Entry filename=".\LFG Installer\LFG Installer.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release">
+      <Entry name="RoundTable LFG" configurationname="Debug" build="False" />
+      <Entry name="LFG Installer" configurationname="Debug" build="False" />
+      <Entry name="RoundTable LFB" configurationname="Debug" build="False" />
+    </Configuration>
+    <Configuration name="Debug">
+      <Entry name="RoundTable LFG" configurationname="Debug" build="False" />
+      <Entry name="LFG Installer" configurationname="Debug" build="False" />
+      <Entry name="RoundTable LFB" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>

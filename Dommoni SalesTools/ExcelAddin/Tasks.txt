@@ -1,0 +1,5 @@
+Dommoni SalesTools Task List
+
+	- Add ComboBox drop down in SL-Send to allow for selection of Intro Statement w/Customized Intro Statement
+	- Handle/Fix SL-Send Closing behaviour for differant application environments.
+	- Extract Email from Column 8 for SLSend

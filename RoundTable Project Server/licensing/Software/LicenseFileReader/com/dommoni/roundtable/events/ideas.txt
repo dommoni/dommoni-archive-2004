@@ -1,0 +1,6 @@
+This is the system event interface.
+
+Code registers here to recieve events.
+
+the client implements IEventListener and adds it to the 
+EventListenerManager.addEventListener()

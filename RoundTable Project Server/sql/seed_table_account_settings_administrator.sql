@@ -1,0 +1,1 @@
+insert into `account_settings` (`account_id`) values (1)

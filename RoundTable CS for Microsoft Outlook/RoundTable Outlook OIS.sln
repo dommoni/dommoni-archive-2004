@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookOIS", "OutlookOIS\OutlookOIS.csproj", "{BC7AC1D3-4EC2-4576-BA28-FFBE89D4AB5B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OutlookOISSetup", "OutlookOIS\OutlookOISSetup\OutlookOISSetup.vdproj", "{11326F46-8F46-47F4-B3FD-53C9E67A1900}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BC7AC1D3-4EC2-4576-BA28-FFBE89D4AB5B}.Debug.ActiveCfg = Debug|.NET
+		{BC7AC1D3-4EC2-4576-BA28-FFBE89D4AB5B}.Debug.Build.0 = Debug|.NET
+		{BC7AC1D3-4EC2-4576-BA28-FFBE89D4AB5B}.Release.ActiveCfg = Release|.NET
+		{BC7AC1D3-4EC2-4576-BA28-FFBE89D4AB5B}.Release.Build.0 = Release|.NET
+		{11326F46-8F46-47F4-B3FD-53C9E67A1900}.Debug.ActiveCfg = Debug
+		{11326F46-8F46-47F4-B3FD-53C9E67A1900}.Release.ActiveCfg = Release
+		{11326F46-8F46-47F4-B3FD-53C9E67A1900}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

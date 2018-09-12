@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+  
+  <servlet>
+    <servlet-name>WebUIServlet</servlet-name>
+    <servlet-class>com.dommoni.ece.webui.WebUIServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>com.dommoni.ece.webui.ControllerServlet</servlet-class>
+  </servlet>
+
+  <!-- 
+  
+  JSP SERVLET MAPPINGS!!! 
+  
+  -->  
+
+  <!-- ACCOUNT PAGES -->
+
+  <servlet>
+    <servlet-name>accountChangePassword</servlet-name>
+    <servlet-class>org.apache.jsp.accountChangePassword</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>accountEditProfile</servlet-name>
+    <servlet-class>org.apache.jsp.accountEditProfile</servlet-class>
+  </servlet>
+
+
+  <!-- ADMIN PAGES -->
+
+  <!-- admin accounts -->
+  <servlet>
+    <servlet-name>adminAccounts</servlet-name>
+    <servlet-class>org.apache.jsp.adminAccounts</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminAccountsCreateAccount</servlet-name>
+    <servlet-class>org.apache.jsp.adminAccountsCreateAccount</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminAccountsModifyAccount</servlet-name>
+    <servlet-class>org.apache.jsp.adminAccountsModifyAccount</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>adminAccountsViewAccount</servlet-name>
+    <servlet-class>org.apache.jsp.adminAccountsViewAccount</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminConfiguration</servlet-name>
+    <servlet-class>org.apache.jsp.adminConfiguration</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminAccountsGet2WeekActivityChart</servlet-name>
+    <servlet-class>org.apache.jsp.adminAccountsGet2WeekActivityChart</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>adminLogs</servlet-name>
+    <servlet-class>org.apache.jsp.adminLogs</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>adminLogsViewActiveSessions</servlet-name>
+    <servlet-class>org.apache.jsp.adminLogsViewActiveSessions</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>adminLogsViewEventLogs</servlet-name>
+    <servlet-class>org.apache.jsp.adminLogsViewEventLogs</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminMain</servlet-name>
+    <servlet-class>org.apache.jsp.adminMain</servlet-class>
+  </servlet>
+
+  <!-- admin-projects -->
+  <servlet>
+    <servlet-name>adminProjects</servlet-name>
+    <servlet-class>org.apache.jsp.adminProjects</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminProjectsViewProject</servlet-name>
+    <servlet-class>org.apache.jsp.adminProjectsViewProject</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminProjectsViewProjectChangeHistory</servlet-name>
+    <servlet-class>org.apache.jsp.adminProjectsViewProjectChangeHistory</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminProjectsCreateProject</servlet-name>
+    <servlet-class>org.apache.jsp.adminProjectsCreateProject</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminProjectsEditProject</servlet-name>
+    <servlet-class>org.apache.jsp.adminProjectsEditProject</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>adminSessions</servlet-name>
+    <servlet-class>org.apache.jsp.adminSessions</servlet-class>
+  </servlet>
+
+
+
+  <servlet>
+    <servlet-name>calendar_popup</servlet-name>
+    <servlet-class>org.apache.jsp.calendar_popup</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>getProfileImage</servlet-name>
+    <servlet-class>org.apache.jsp.getProfileImage</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>header</servlet-name>
+    <servlet-class>org.apache.jsp.header</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>org.apache.jsp.login</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>menus</servlet-name>
+    <servlet-class>org.apache.jsp.menus</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>openProjectMenu</servlet-name>
+    <servlet-class>org.apache.jsp.openProjectMenu</servlet-class>
+  </servlet>
+
+  <!-- PROJECT PAGES -->
+  <servlet>
+    <servlet-name>projectAnnouncementsAddAnnouncementDlg</servlet-name>
+    <servlet-class>org.apache.jsp.projectAnnouncementsAddAnnouncementDlg</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectAnnouncementsConfirmAddAnnouncementSuccess</servlet-name>
+    <servlet-class>org.apache.jsp.projectAnnouncementsConfirmAddAnnouncementSuccess</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectAnnouncementsViewAnnouncementDlg</servlet-name>
+    <servlet-class>org.apache.jsp.projectAnnouncementsViewAnnouncementDlg</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <servlet-name>projectAttachmentsAddAttachmentSuccess</servlet-name>
+    <servlet-class>org.apache.jsp.projectAttachmentsAddAttachmentSuccess</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectAttachmentsAddAttachmentWiz1</servlet-name>
+    <servlet-class>org.apache.jsp.projectAttachmentsAddAttachmentWiz1</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectAttachmentsAddAttachmentWiz2File</servlet-name>
+    <servlet-class>org.apache.jsp.projectAttachmentsAddAttachmentWiz2File</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectAttachmentsAddAttachmentWiz2Object</servlet-name>
+    <servlet-class>org.apache.jsp.projectAttachmentsAddAttachmentWiz2Object</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectAttachmentsAddAttachmentWiz3Object</servlet-name>
+    <servlet-class>org.apache.jsp.projectAttachmentsAddAttachmentWiz3Object</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectBlogs</servlet-name>
+    <servlet-class>org.apache.jsp.projectBlogs</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectCalendar</servlet-name>
+    <servlet-class>org.apache.jsp.projectCalendar</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectCommentsAddCommentDlg</servlet-name>
+    <servlet-class>org.apache.jsp.projectCommentsAddCommentDlg</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectConfirmAddCommentDlgSuccess</servlet-name>
+    <servlet-class>org.apache.jsp.projectConfirmAddCommentDlgSuccess</servlet-class>
+  </servlet>	
+	
+  <servlet>
+    <servlet-name>projectConfirmDeleteCommentDlgSuccess</servlet-name>
+    <servlet-class>org.apache.jsp.projectConfirmDeleteCommentDlgSuccess</servlet-class>
+  </servlet>
+    
+  <servlet>
+    <servlet-name>projectConfirmDeleteDlg</servlet-name>
+    <servlet-class>org.apache.jsp.projectConfirmDeleteDlg</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectConfirmDeleteDlgFailure</servlet-name>
+    <servlet-class>org.apache.jsp.projectConfirmDeleteDlgFailure</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectConfirmDeleteDlgSuccess</servlet-name>
+    <servlet-class>org.apache.jsp.projectConfirmDeleteDlgSuccess</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectContacts</servlet-name>
+    <servlet-class>org.apache.jsp.projectContacts</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectDiscussions</servlet-name>
+    <servlet-class>org.apache.jsp.projectDiscussions</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectDiscussionsCheckDelete</servlet-name>
+    <servlet-class>org.apache.jsp.projectDiscussionsCheckDelete</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectDiscussionsViewDiscussion</servlet-name>
+    <servlet-class>org.apache.jsp.projectDiscussionsViewDiscussion</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectDocuments</servlet-name>
+    <servlet-class>org.apache.jsp.projectDocuments</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectDocumentsModifyDocument</servlet-name>
+    <servlet-class>org.apache.jsp.projectDocumentsModifyDocument</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectDocumentsUploadDocument</servlet-name>
+    <servlet-class>org.apache.jsp.projectDocumentsUploadDocument</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectDocumentsViewDocument</servlet-name>
+    <servlet-class>org.apache.jsp.projectDocumentsViewDocument</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectForums</servlet-name>
+    <servlet-class>org.apache.jsp.projectForums</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectForumsModifyForum</servlet-name>
+    <servlet-class>org.apache.jsp.projectForumsModifyForum</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectForumsNewForumTopic</servlet-name>
+    <servlet-class>org.apache.jsp.projectForumsNewForumTopic</servlet-class></servlet>
+
+  <servlet>
+    <servlet-name>projectForumsPostReply</servlet-name>
+    <servlet-class>org.apache.jsp.projectForumsPostReply</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectForumsViewForum</servlet-name>
+    <servlet-class>org.apache.jsp.projectForumsViewForum</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectMain</servlet-name>
+    <servlet-class>org.apache.jsp.projectMain</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectMeetings</servlet-name>
+    <servlet-class>org.apache.jsp.projectMeetings</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectMeetingsNewMeeting</servlet-name>
+    <servlet-class>org.apache.jsp.projectMeetingsNewMeeting</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectMeetingsViewMeeting</servlet-name>
+    <servlet-class>org.apache.jsp.projectMeetingsViewMeeting</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectMembers</servlet-name>
+    <servlet-class>org.apache.jsp.projectMembers</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectMembersViewMember</servlet-name>
+    <servlet-class>org.apache.jsp.projectMembersViewMember</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectNotificationsNewNotification</servlet-name>
+    <servlet-class>org.apache.jsp.projectNotificationsNewNotification</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectNotificationsNotificationWizard</servlet-name>
+    <servlet-class>org.apache.jsp.projectNotificationsNotificationWizard</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectNotificationsNotificationWizard2</servlet-name>
+    <servlet-class>org.apache.jsp.projectNotificationsNotificationWizard2</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectNotificationsNotificationWizardSuccess</servlet-name>
+    <servlet-class>org.apache.jsp.projectNotificationsNotificationWizardSuccess</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectNotificationsViewNotifications</servlet-name>
+    <servlet-class>org.apache.jsp.projectNotificationsViewNotifications</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectNotificationsViewNotification</servlet-name>
+    <servlet-class>org.apache.jsp.projectNotificationsViewNotification</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectSchedules</servlet-name>
+    <servlet-class>org.apache.jsp.projectSchedules</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectSchedulesNewSchedule</servlet-name>
+    <servlet-class>org.apache.jsp.projectSchedulesNewSchedule</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>projectSchedulesViewSchedule</servlet-name>
+    <servlet-class>org.apache.jsp.projectSchedulesViewSchedule</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectTodos</servlet-name>
+    <servlet-class>org.apache.jsp.projectTodos</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectTodosNewToDo</servlet-name>
+    <servlet-class>org.apache.jsp.projectTodosNewToDo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectTodosNewToDoFolder</servlet-name>
+    <servlet-class>org.apache.jsp.projectTodosNewToDoFolder</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectTodosModifyTodo</servlet-name>
+    <servlet-class>org.apache.jsp.projectTodosModifyTodo</servlet-class>
+  </servlet>  
+
+  <servlet>
+    <servlet-name>projectTodosViewTodo</servlet-name>
+    <servlet-class>org.apache.jsp.projectTodosViewTodo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>projectUserSettings</servlet-name>
+    <servlet-class>org.apache.jsp.projectUserSettings</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>selectProjects</servlet-name>
+    <servlet-class>org.apache.jsp.selectProjects</servlet-class>
+  </servlet>	
+
+  <!--
+     Servlet Mappings
+  -->
+  <servlet-mapping>
+    <servlet-name>ControllerServlet</servlet-name>
+  	<url-pattern>/servlet/ControllerServlet</url-pattern>
+  </servlet-mapping>
+
+
+  
+  <servlet-mapping>
+    <servlet-name>accountChangePassword</servlet-name>
+  	<url-pattern>/accountChangePassword.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>accountEditProfile</servlet-name>
+  	<url-pattern>/accountEditProfile.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminAccounts</servlet-name>
+  	<url-pattern>/adminAccounts.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>adminAccountsCreateAccount</servlet-name>
+  	<url-pattern>/adminAccountsCreateAccount.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>adminAccountsModifyAccount</servlet-name>
+  	<url-pattern>/adminAccountsModifyAccount.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>adminAccountsViewAccount</servlet-name>
+  	<url-pattern>/adminAccountsViewAccount.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminConfiguration</servlet-name>
+  	<url-pattern>/adminConfiguration.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>adminAccountsGet2WeekActivityChart</servlet-name>
+  	<url-pattern>/adminAccountsGet2WeekActivityChart.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminLogs</servlet-name>
+  	<url-pattern>/adminLogs.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminLogsViewActiveSessions</servlet-name>
+  	<url-pattern>/adminLogsViewActiveSessions.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminLogsViewEventLogs</servlet-name>
+  	<url-pattern>/adminLogsViewEventLogs.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminMain</servlet-name>
+  	<url-pattern>/adminMain.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminProjects</servlet-name>
+  	<url-pattern>/adminProjects.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>adminProjectsViewProject</servlet-name>
+  	<url-pattern>/adminProjectsViewProject.jsp</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>adminProjectsViewProjectChangeHistory</servlet-name>
+  	<url-pattern>/adminProjectsViewProjectChangeHistory.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminSessions</servlet-name>
+  	<url-pattern>/adminSessions.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>calendar_popup</servlet-name>
+  	<url-pattern>/calendar_popup.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>adminProjectsEditProject</servlet-name>
+  	<url-pattern>/adminProjectsEditProject.jsp</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>adminProjectsCreateProject</servlet-name>
+  	<url-pattern>/adminProjectsCreateProject.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>getProfileImage</servlet-name>
+  	<url-pattern>/getProfileImage.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>header</servlet-name>
+  	<url-pattern>/header.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+  	<url-pattern>/login.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>menus</servlet-name>
+  	<url-pattern>/menus.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>openProjectMenu</servlet-name>
+  	<url-pattern>/openProjectMenu.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAnnouncementsAddAnnouncementDlg</servlet-name>
+  	<url-pattern>/projectAnnouncementsAddAnnouncementDlg.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAnnouncementsConfirmAddAnnouncementSuccess</servlet-name>
+  	<url-pattern>/projectAnnouncementsConfirmAddAnnouncementSuccess.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAnnouncementsViewAnnouncementDlg</servlet-name>
+  	<url-pattern>/projectAnnouncementsViewAnnouncementDlg.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAttachmentsAddAttachmentSuccess</servlet-name>
+  	<url-pattern>/projectAttachmentsAddAttachmentSuccess.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAttachmentsAddAttachmentWiz1</servlet-name>
+  	<url-pattern>/projectAttachmentsAddAttachmentWiz1.jsp</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>projectAttachmentsAddAttachmentWiz2File</servlet-name>
+  	<url-pattern>/projectAttachmentsAddAttachmentWiz2File.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAttachmentsAddAttachmentWiz2Object</servlet-name>
+  	<url-pattern>/projectAttachmentsAddAttachmentWiz2Object.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectAttachmentsAddAttachmentWiz3Object</servlet-name>
+  	<url-pattern>/projectAttachmentsAddAttachmentWiz3Object.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectBlogs</servlet-name>
+  	<url-pattern>/projectBlogs.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectCalendar</servlet-name>
+  	<url-pattern>/projectCalendar.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectCommentsAddCommentDlg</servlet-name>
+  	<url-pattern>/projectCommentsAddCommentDlg.jsp</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+    <servlet-name>projectConfirmAddCommentDlgSuccess</servlet-name>
+    <url-pattern>/projectConfirmAddCommentDlgSuccess.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectConfirmDeleteCommentDlgSuccess</servlet-name>
+    <url-pattern>/projectConfirmDeleteCommentDlgSuccess.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectConfirmDeleteDlg</servlet-name>
+  	<url-pattern>/projectConfirmDeleteDlg.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectConfirmDeleteDlgFailure</servlet-name>
+  	<url-pattern>/projectConfirmDeleteDlgFailure.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectConfirmDeleteDlgSuccess</servlet-name>
+  	<url-pattern>/projectConfirmDeleteDlgSuccess.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectContacts</servlet-name>
+  	<url-pattern>/projectContacts.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDiscussions</servlet-name>
+  	<url-pattern>/projectDiscussions.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDiscussionsCheckDelete</servlet-name>
+  	<url-pattern>/projectDiscussionsCheckDelete.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDiscussionsViewDiscussion</servlet-name>
+  	<url-pattern>/projectDiscussionsViewDiscussion.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDocuments</servlet-name>
+  	<url-pattern>/projectDocuments.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDocumentsModifyDocument</servlet-name>
+  	<url-pattern>/projectDocumentsModifyDocument.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDocumentsUploadDocument</servlet-name>
+  	<url-pattern>/projectDocumentsUploadDocument.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectDocumentsViewDocument</servlet-name>
+  	<url-pattern>/projectDocumentsViewDocument.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectForums</servlet-name>
+  	<url-pattern>/projectForums.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectForumsModifyForum</servlet-name>
+  	<url-pattern>/projectForumsModifyForum.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectForumsNewForumTopic</servlet-name>
+  	<url-pattern>/projectForumsNewForumTopic.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectForumsPostReply</servlet-name>
+  	<url-pattern>/projectForumsPostReply.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectForumsViewForum</servlet-name>
+  	<url-pattern>/projectForumsViewForum.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectMain</servlet-name>
+  	<url-pattern>/projectMain.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectMeetings</servlet-name>
+  	<url-pattern>/projectMeetings.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectMeetingsNewMeeting</servlet-name>
+  	<url-pattern>/projectMeetingsNewMeeting.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectMeetingsViewMeeting</servlet-name>
+  	<url-pattern>/projectMeetingsViewMeeting.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectMembers</servlet-name>
+  	<url-pattern>/projectMembers.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectMembersViewMember</servlet-name>
+  	<url-pattern>/projectMembersViewMember.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectNotificationsNewNotification</servlet-name>
+  	<url-pattern>/projectNotificationsNewNotification.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectNotificationsNotificationWizard</servlet-name>
+  	<url-pattern>/projectNotificationsNotificationWizard.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectNotificationsNotificationWizard2</servlet-name>
+  	<url-pattern>/projectNotificationsNotificationWizard2.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectNotificationsNotificationWizardSuccess</servlet-name>
+  	<url-pattern>/projectNotificationsNotificationWizardSuccess.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectNotificationsViewNotifications</servlet-name>
+  	<url-pattern>/projectNotificationsViewNotifications.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectNotificationsViewNotification</servlet-name>
+  	<url-pattern>/projectNotificationsViewNotification.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectSchedules</servlet-name>
+  	<url-pattern>/projectSchedules.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>projectSchedulesNewSchedule</servlet-name>
+  	<url-pattern>/projectSchedulesNewSchedule.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectSchedulesViewSchedule</servlet-name>
+  	<url-pattern>/projectSchedulesViewSchedule.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectTodos</servlet-name>
+  	<url-pattern>/projectTodos.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectTodosModifyTodo</servlet-name>
+  	<url-pattern>/projectTodosModifyTodo.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectTodosNewToDo</servlet-name>
+  	<url-pattern>/projectTodosNewToDo.jsp</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+    <servlet-name>projectTodosNewToDoFolder</servlet-name>
+  	<url-pattern>/projectTodosNewToDoFolder.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectTodosViewTodo</servlet-name>
+  	<url-pattern>/projectTodosViewTodo.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>projectUserSettings</servlet-name>
+  	<url-pattern>/projectUserSettings.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>selectProjects</servlet-name>
+  	<url-pattern>/selectProjects.jsp</url-pattern>
+  </servlet-mapping>
+</web-app>

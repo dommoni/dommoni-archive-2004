@@ -1,0 +1,1 @@
+create table `lld` (`date` TIMESTAMP)
