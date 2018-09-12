@@ -1,0 +1,131 @@
+.content {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	text-decoration: none;
+	color: #494949;
+; line-height: 150%}
+.contentLink {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: bold;
+	text-decoration: none;
+	color: #0066FF;
+}
+.finePrint {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: black;
+}
+.finePrintWhite {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: white;
+}
+A.link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FF6600;
+	text-decoration: underline;
+}
+A.BottomLinks {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #494949;
+}
+A:Hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FF6600;
+	text-decoration: Underline;
+}
+A.MainMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: None;
+}
+A:Hover.MainMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFCC00;
+	text-decoration: Underline;
+}
+A.ContentLinkLarge {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+      font-size: 12px; 
+      font-style: normal; 
+      color: #0066ff; 
+      font-weight: bold; 
+      text-decoration: none;
+}
+A:Hover.ContentLinkLarge {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+      font-size: 12px; 
+      font-style: normal; 
+      color: #FF6600; 
+      font-weight: bold; 
+      text-decoration: none;
+
+}
+
+.cellTitle {
+	color: #FFFFFF;
+	background-color: #666666;
+}
+.contentIndex {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #333333;
+}
+.contentWhite {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #FFFFFF;
+}
+.portfolioBorder {
+	border: 1px solid #000000;
+}
+.portBorder {
+	border: 1px solid #FFFFFF;
+}
+.titleNews {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FF6600;
+	text-decoration: none;
+}
+.titlesMain {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FF6600;
+	text-decoration: none;
+}
+.whiteLink {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	color: #ffffff;
+}
+.titleOrange { 
+
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: normal; 
+	color: #FF6600; 
+	text-decoration: none; }

@@ -1,0 +1,159 @@
+<html>
+
+<head>
+<title>Dommoni</title>
+<LINK HREF="dommoni_styles.css" REL="stylesheet" TYPE="text/css">
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight=0 marginwidth=0>
+
+<table border="0" bordercolor="#0000FF" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+	<td width="100%" align="left" bgcolor="#0863BE"><img border="0" src="images/1x1trans.gif" width="1" height="10"></td>
+</tr>
+<tr>
+	<td width="100%" align="left"><img border="0" src="images/DomTopLog.gif" width="249" height="113" usemap="#Map"></td>
+</tr>
+<tr>
+	<td width="100%" align="center" bgcolor="#92B9E0"><img border="0" src="images/1x1trans.gif" width="1" height="15">
+    <table border="0" cellspacing="0" cellpadding="0" bordercolor="#00FF00">
+    <tr>
+    	<td valign="top">
+        <table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<TR>
+			<TD bgcolor="#FFFFFF"><img border="0" src=images/corner_white.gif width=10 HEIGHT=9></TD>
+		</TR>
+		<TR>
+			<TD bgcolor="#FFFFFF"><img border="0" src=images/1x1trans.gif width=484 HEIGHT=1></TD>
+		</TR>
+        <tr>
+        	<td width="484" HEIGHT=100% bgcolor="FFFFFF" VALIGN=top>
+			<TABLE CELLPADDING=5 CELLSPACING=0 WIDTH=100% HEIGHT=100%>
+			<TR>
+				      <TD> 
+                        <!--::::::::::::::::::::::::::::::::: TITLE TO THE MAIN CONTENT STARTS HERE ::::::::::::::::::::::::::::::::::::::::::-->
+                        <span class=titlesMain>News</span> 
+                        <hr size=1 color="#666666">
+                      </TD>
+			</TR>
+			<TR>
+				      <TD HEIGHT=100%> 
+                        <!--::::::::::::::::::::::::::::::::: MAIN CONTENT STARTS HERE :::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+                        <p class="content"><b>January 4, 2005</b><br>
+                          <a href="pr_01042005.html" class="contentLink">Dommoni 
+                          releases beta version of its initial product, RoundTable 
+                          Collaboration Environment.</a><br>
+                          Dommoni today announced the beta release of its initial 
+                          product offering, RoundTable Collaboration Environment. 
+                          RoundTable is a centralized group or corporate collaboration 
+                          system allowing it's users to more effectively share 
+                          information with each other... </p>
+                        <p><span class="content"><b>January 3, 2005</b><br>
+                          </span><a href="pr_01032005.html" class="contentLink" >Dommoni 
+                          Company Launch</a><span class="content"><br>
+                          Dommoni, an Enterprise Software Company based out of 
+                          La Jolla California has catapulted itself onto the marketplace 
+                          today with the release of its initial product offering, 
+                          RoundTable Collaboration Environment. Dommoni is dedicated 
+                          to delivering quality software with the goal of enabling 
+                          businesses to realize their goals and potential</span>...<br>
+                          <BR>
+                        </p>
+                      </TD>
+			</TR>
+			<TR>
+				<TD>
+				 <CENTER>
+						<!-- (((((((((((((((((((((((((((((((((((((((((((((( Bottom Links ))))))))))))))))))))))))))))))))))))))))))))))))) -->
+                        <a href=solutions.html class="BottomLinks">Solutions</a>
+                        | <a href=news.html class=BottomLinks>News</a> | 
+						<a href=company.html class=bottomLinks>Company</a> | <a href=contact.html class=bottomLinks>Contact</a>
+						<!-- (((((((((((((((((((((((((((((((((((((((((((((( //Bottom Links ))))))))))))))))))))))))))))))))))))))))))))))))) -->
+						</CENTER>
+				</TD>
+			</TR>
+			</TABLE></td>
+		</tr>
+        </table>
+        </td>
+        <td align="left" valign="top"><img border="0" src="images/1x1trans.gif" width="7" height="1"></td>
+		<td align="left" valign="top">
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN MENU STARTS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+		<table border="0" cellpadding=0 cellspacing=0>
+        <tr>
+        <td width="100%" bgcolor="#3C78B4">
+		<img src="images/title_Mainmenu.gif" width="200" height="43">
+        <TABLE BORDER="0" cellpadding="0" cellspacing="10" bordercolor="#FF0000">
+        <tr>
+        	<td><a href=solutions.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td>
+            <td width="100%"><a href=solutions.html class=MainMenu>Solutions</a></td>
+            </tr>
+            <tr>
+            	      <td><a href=news.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td>
+                <td width="100%"><a href=news.html class=MainMenu>News</a></td>
+            </tr>
+            <tr>
+            	      <td><a href=company.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td>
+                <td width="100%"><a href=company.html class=MainMenu>Company</a></td>
+              </tr>
+              <tr>
+                      <td><a href=contact.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td>
+                <td width="100%"><a href=contact.html class=MainMenu>Contact</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                      <td width="100%"><img border="0" src="images/1x1trans.gif" width="1" height="14"></td>
+              </tr>
+            </table>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN MENU ENDS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+			</td>
+              </tr>
+            </table>
+          </td>
+              </tr>
+            <tr>
+          <td valign="top" colspan="3"><img border="0" src="images/1x1trans.gif" width="1" height="7">
+          </td>
+          </tr>
+        <tr>
+          <td valign="top"></td>
+          <td align="left" valign="top">&nbsp;</td>
+          <td align="left" valign="top">
+          <table border="0" bgcolor="#CC3300" width="100%" cellspacing="0" cellpadding="0" height="100%">
+                    <tr>
+                      <td width="100%"><img border="0" src="images/title_featured.gif"></td>
+                    </tr>
+                    <tr>
+                      <td width="100%" bgcolor="#003A78" height="100%"><img border="0" src="images/1x1trans.gif" width="1" height="50"></td>
+                    </tr>
+                  </table><img border="0" src="images/1x1trans.gif" width="1" height="20"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+<!-- ********************************************* BOTTOM TABLE *******************************************-->
+	<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0>
+	<TR>
+	  	<TD><img border="0" src="images/1x1trans.gif" width="1" height="4"></TD>
+	</TR>
+	</TABLE>
+	<TABLE WIDTH=100% CELLPADDING=20 CELLSPACING=0>
+	<TD bgcolor="4493E1" ALIGN=center><SPAN CLASS=finePrintWhite>Copyright © 2004 Dommoni Corporation. All rights reserved.</SPAN>
+	</TD>
+	</TABLE>
+<!-- ********************************************* //BOTTOM TABLE *******************************************-->
+
+<map name="Map">
+  <area shape="rect" coords="31,35,239,91" href="index.html">
+</map>
+
+<!-- BEGIN WebSTAT Activation Code -->
+<script type="text/javascript" language="JavaScript" src="http://hv3.webstat.com/cgi-bin/wsv2.cgi?78286"></script>
+<noscript>
+<a href="http://www.webstat.com">
+<img src="http://hv3.webstat.com/scripts/wsb.php?ac=78286" border="0" alt="Site Counter and Website Statistics by WebSTAT" /></a>
+</noscript>
+<!-- END WebSTAT Activation Code -->
+</body>
+

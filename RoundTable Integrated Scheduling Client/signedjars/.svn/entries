@@ -1,0 +1,375 @@
+8
+
+dir
+20
+svn://brian/Workspaces/Misc.%20Projects/WhatNow,%20Inc/Dommoni%20-%20RoundTable%20Integrated%20Scheduling%20Client/signedjars
+svn://brian/Workspaces/Misc.%20Projects
+
+
+
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3e909766-7e3f-5647-9f59-d8cfc6c6918b
+
+axis.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+2d48dac2d98a66bbdffc1287526e1edc
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+wsdl4j-1.5.1.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+e76bf26b6955a7fa73d85d096be6e1a6
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+KeyInfo.txt
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+bb63925113df18dfea1a5a19857efa04
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+ss_axis.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+2917707862aea9e3b9165f2f360f8467
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ssRoundTableKey.bin
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+290c74f8cba93ffe9cfe15484430dd94
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+SharedSchedulingClient.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+88743e3330887b6574a3a55a4fdb23db
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_wsdl4j-1.5.1.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+a8318d108aa6cec32632329795240c56
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+commons-discovery-0.2.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+9a2fb56e6a79169b2fb6c8a0dc79abb0
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+saaj.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+bbc59424764db89879c7216bd4480ec0
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_SharedSchedulingClient.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+f4957948624ca4fb39d72d6f8cc0cd1b
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_commons-discovery-0.2.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+9a75e426781b6bd5930fb02325ccbe0b
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+doSignSSclient.bat
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+884ed11fd35e2473cd4e5e64246bae35
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+ss_saaj.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+7e6c17d9a138ec95346c240425a1f701
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+log4j-1.2.8.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+18a4ca847248e5b8606325684342701c
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+looks-1.3.1.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+a3f1ba5e486b04c593cbd3566fde858b
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+forms-1.0.5.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+d13f193d4e87c1d7adacc156f2ea3db1
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+jaxrpc.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+b3f5e2b971eff83c27e67fa8a3d9adcb
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ProjectServerAPI.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+132011c521e802ea8030466949cb5050
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_log4j-1.2.8.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+08087e605e0e58f1a793c2520ee77db8
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_forms-1.0.5.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+5d55db303ffce7ed896311bc6d5ef38a
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_looks-1.3.1.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+b2531dd862946575ae0f1a5396283134
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_ProjectServerAPI.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+49ac7d48debf757b21ef2b525f3c9647
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ss_jaxrpc.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+e9ad46a8e84419e5120f7b253ea52250
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+commons-logging-1.0.4.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+8a507817b28077e0478add944c64586a
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+log4j.properties
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+cdc96d2f64aa7595e881d71bb6d144eb
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+doSigns.bat
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+9a7610f596a46cf831ede6929af77836
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+ss_commons-logging-1.0.4.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+c64fa20f783ed12871730ccd88be3548
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+

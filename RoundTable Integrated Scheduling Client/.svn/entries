@@ -1,0 +1,148 @@
+8
+
+dir
+20
+svn://brian/Workspaces/Misc.%20Projects/WhatNow,%20Inc/Dommoni%20-%20RoundTable%20Integrated%20Scheduling%20Client
+svn://brian/Workspaces/Misc.%20Projects
+
+
+
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3e909766-7e3f-5647-9f59-d8cfc6c6918b
+
+Marketing
+dir
+
+.project
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+f116b02f45747fc3198dcff7d0f53a49
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+ssRoundTableKey.bin
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+290c74f8cba93ffe9cfe15484430dd94
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+SharedSchedulingClient.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+c6bedab67d18ce7aa0d99ef23c4b97ee
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+src
+dir
+
+signedjars
+dir
+
+ss_SharedSchedulingClient.jar
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+0b0fecb2180a8fc1de5d0902e974ae89
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+doSignSSclient.bat
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+3cd658614a803273e6a5c3fc35085b80
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+build.xml
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+73b0a351d80930f03faa6b02587fd04d
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+build
+dir
+
+.classpath
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+dda58d4d418cc1583dc598732b74c67a
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+Tasks.txt
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+87aa975f6e4848d99811e5ba5b50a7a3
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+images
+dir
+
+lib
+dir
+
+bin
+dir
+

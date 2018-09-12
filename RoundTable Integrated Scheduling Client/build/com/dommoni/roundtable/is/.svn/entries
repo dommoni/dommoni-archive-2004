@@ -1,0 +1,76 @@
+8
+
+dir
+20
+svn://brian/Workspaces/Misc.%20Projects/WhatNow,%20Inc/Dommoni%20-%20RoundTable%20Integrated%20Scheduling%20Client/build/com/dommoni/roundtable/is
+svn://brian/Workspaces/Misc.%20Projects
+
+
+
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3e909766-7e3f-5647-9f59-d8cfc6c6918b
+
+model
+dir
+
+tmp
+dir
+
+ISResourceRegistry.class
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+625586cf36df4d00610edd27d5781cc3
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ISClientApplet.class
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+fa04df5a3259032ac3eacb0365614c17
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+
+ui
+dir
+
+ISLoadException.class
+file
+
+
+
+
+2008-06-16T16:37:19.984337Z
+57f6610e6772f2cb85bb4c88317e80e2
+2008-06-16T16:37:19.984337Z
+14
+Brian Abbott
+has-props
+

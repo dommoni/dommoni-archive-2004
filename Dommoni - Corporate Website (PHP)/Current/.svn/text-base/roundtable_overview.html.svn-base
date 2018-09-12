@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<title>Dommoni</title>
+<LINK HREF="dommoni_styles.css" REL="stylesheet" TYPE="text/css">
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight=0 marginwidth=0>
+<table border="0" bordercolor="#0000FF" width="100%" cellspacing="0" cellpadding="0"> 
+<tr> <td width="100%" align="left" bgcolor="#0863BE"><img border="0" src="images/1x1trans.gif" width="1" height="10"></td></tr> 
+<tr> <td width="100%" align="left"><img border="0" src="images/DomTopLog.gif" width="249" height="113" usemap="#Map"></td></tr> 
+<tr> <td width="100%" align="center" bgcolor="#92B9E0"><img border="0" src="images/1x1trans.gif" width="1" height="15"> 
+<table border="0" cellspacing="0" cellpadding="0" bordercolor="#00FF00"> <tr> 
+<td valign="top" bgcolor="#FFFFFF"> <table border="0" cellspacing="0" cellpadding="0" bordercolor="#00FF00"> 
+<tr> <td bgcolor="#FFFFFF"><img border="0" src=images/corner_white.gif width=10 height=9></td></tr> 
+<tr> <td bgcolor="#FFFFFF"><img border="0" src=images/1x1trans.gif width=484 height=1></td></tr> 
+<tr> <td width="484" height=100% bgcolor="FFFFFF" valign=top> <table cellpadding=10 cellspacing=0 width=100% height=100%> 
+<tr> <td> <!--::::::::::::::::::::::::::::::::: Top Title ::::::::::::::::::::::::::::::::::::::::::--> 
+<!--<span class=titlesMain>Solutions</span></td>--> <span class="titlesMain">RoundTable 
+Collaboration Environment</span> <!--::::::::::::::::::::::::::::::::: Top Title ::::::::::::::::::::::::::::::::::::::::::--> 
+<HR Size=1 color="#666666"> <CENTER> <!-- ################################### RoundTable Collaboration Navigation ################################## --> 
+<a href="roundtable_overview.html" class="contentLink"><b>overview</b></a> | <a href="roundtable_core.html" class="contentLink"><b>core 
+services</b></a> | <a href="roundtable_connected.html" class="contentLink"><b>connected 
+services</b></a> | <a href="roundtable_tryit.html" class="contentLink"><b>try 
+it</b></a> | <a href="roundtable_buyit.html" class="contentLink"><b>buy it</b></a> 
+</CENTER><!-- ################################### RoundTable Collaboration Navigation ################################## --> 
+</tr> <tr> <td height=100%> <!--::::::::::::::::::::::::::::::::: MAIN CONTENT STARTS HERE :::::::::::::::::::::::::::::::::::::::::::::::::::::::--> 
+<p class="content">RoundTable&trade; enables your team to collaborate and 
+come together to get things done, more effectively and quickly than before. </p>
+<p class="content">RoundTable 
+is distributed as a standalone server product that requires very little setup 
+and administration time, making it the perfect system for small, medium, and large 
+businesses. Once it's up and running RoundTable can be accessed through 
+a standard web browser such as Internet Explorer or Fire Fox. Depending on how 
+you deploy RoundTable, this can be done from anywhere in the world, allowing 
+traveling users or satellite offices to easily collaborate with other organization 
+members. </p>
+<p align="center"><img src="images/pic_small_guy_conf.gif" width="120" height="92"> 
+<img src="images/pic_small_guy_feet.gif" width="121" height="93"> <img src="images/pic_small_girl_coffee.gif" width="136" height="92"> 
+</p><TABLE width=100%> <TR> <TD><img border="0" src="images/1x1trans.gif" width="125" height="1"></TD><TD ALIGN=right><img src="images/arrow-dark.gif" width="13" height="13" align="ABSMIDDLE"> 
+</TD><TD><a href="RoundTable%20%20Preliminary%20Datasheet.pdf" class="contentLink"><B>Download 
+the RoundTable&trade; Datasheet</B></a></TD></TR> </TABLE>
+<p class="content"><span class="content">The central component of RoundTable is RoundTable Core Services. 
+</span>
+<table width="100%" border="0" cellspacing="3" cellpadding="0"> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Core 
+Services</td></tr> <tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Connected 
+Services</td></tr> </table><div align="CENTER"></div><p><span class="content"><b><br> Core Services</b><br> 
+These components truly are the heart of RoundTable and provide a foundational 
+environment on which to build from.</span> <table width="100%" border="0" cellspacing="3" cellpadding="0"> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Document 
+Management</td></tr> <tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Forums</td></tr> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Discussions</td></tr> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">To-Dos</td></tr> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Meetings</td></tr> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Notifications</td></tr> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Comments</td></tr> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Announcements</td></tr> 
+</table><BR><span class="content">You can find out more about each component on 
+the </span><a href="roundtable_core.html" class="contentLink"><b>core services</b></a><span class="content"> 
+page.</span> <BR><span class="content"><br> <b>Connected Services</b><br> 
+</span><span class="content">RoundTable has 
+been deeply integrated with some of the most popular business productivity software 
+available today. Here are some of the applications we've enabled to connect with 
+RoundTable:</span> <br>
+<br>
+<table width="100%" border="0" cellspacing="3" cellpadding="0"> 
+<tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Microsoft 
+Outlook</td></tr> <tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Microsoft 
+Project</td></tr> <tr> <td width="5%" align="right" height="9"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" height="9" class="content">Microsoft 
+Word</td></tr> <tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Eclipse 
+Java IDE</td></tr> <tr> <td width="5%" align="right"><img src="images/bullet.gif" width="8" height="9"></td><td width="95%" class="content">Microsoft 
+Visual Studio .NET</td></tr> </table>
+<p><BR>
+    <span class="content">Were continuing 
+  to develop and release Connected Services components all the time. For more information, visit the <a href="roundtable_connected.html" class=contentLink><b class="link">RoundTable Connected Cervices</b></a> page.</span></p>
+<p><span class="content">The best way to experience these features are to try them out. Click the link below to download RoundTable today. </span></p>
+<table width=100%>
+  <tr>
+    <td><img border="0" src="images/1x1trans.gif" width="125" height="1"></td>
+    <td align=right>&nbsp;</td>
+    <td><a href="roundtable_signup.html"><img src="images/try%20it2.gif" width="202" height="29" border="0"></a></td>
+  </tr>
+</table><p><BR>
+    <BR> 
+    </p>
+<p></p></td></tr> </table></td></tr> <tr> <td> <CENTER> 
+<!-- (((((((((((((((((((((((((((((((((((((((((((((( Bottom Links ))))))))))))))))))))))))))))))))))))))))))))))))) --> 
+<a href=solutions.html class="BottomLinks">Solutions</a> | <a href=news.html class=BottomLinks>News</a> 
+| <a href=company.html class=bottomLinks>Company</a> | <a href=contact.html class=bottomLinks>Contact</a> 
+<!-- (((((((((((((((((((((((((((((((((((((((((((((( //Bottom Links ))))))))))))))))))))))))))))))))))))))))))))))))) --> 
+</CENTER></td></tr> <tr> <td>&nbsp;</td></tr> </table></td><td align="left" valign="top"><img border="0" src="images/1x1trans.gif" width="7" height="1"></td><td align="left" valign="top" rowspan="2"> 
+<!-- ::::::::::::::::::::::::::::::::::::::::::: Main Menu Starts :::::::::::::::::::::::::::::::::::::::::::::: --> 
+<table border="0" bordercolor="#FFFF00" cellpadding=0 cellspacing=0 height=100%> 
+<tr> <td width="100%" height=100% bgcolor="#3C78B4"> <img src="images/title_Mainmenu.gif" width="200" height="43"> 
+<table border="0" cellpadding=0 cellspacing="10" bordercolor="#FF0000"> <tr> <td><a href=solutions.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td><td width="100%"><a href=solutions.html class=MainMenu>Solutions</a></td></tr> 
+<tr> <td><a href=news.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td><td width="100%"><a href=news.html class=MainMenu>News</a></td></tr> 
+<tr> <td><a href=company.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td><td width="100%"><a href=company.html class=MainMenu>Company</a></td></tr> 
+<tr> <td><a href=contact.html class=WhiteLink><img src="images/homeButtons.gif" border=0></a></td><td width="100%"><a href=contact.html class=MainMenu>Contact</a></td></tr> 
+<tr> <td></td><td width="100%"><img border="0" src="images/1x1trans.gif" width="1" height="14"></td></tr> 
+</table></td></tr> <tr> <td><img border="0" src="images/1x1trans.gif" width="1" height="5"></td></tr> 
+<tr> <td bgcolor="#003A78" height=100%> <!--***************************************************** Featured Product ***************************************************--> 
+<table border="0" bgcolor="#CC3300" width="100%" cellspacing="0" cellpadding="0" height="100%"> 
+<tr> <td width="100%"><img border="0" src="images/title_featured.gif" width="200" height="43"></td></tr> 
+<tr> <td height="100%"> <table bgcolor="#003A78" width="200" cellspacing="0" cellpadding="0" height="100%"> 
+<tr> <td><img border="0" src="images/1x1trans.gif" width="7" height="50"></td><td bgcolor="#003A78" height="100%" valign="top"><font color="#FFFFFF"><font face="Geneva, Arial, Helvetica, san-serif" size="2"><b>RoundTable 
+Connected Services:</b><br> Add-ins connect existing applications to RoundTable, 
+making them more powerful!<b> </b><a href="roundtable_connected.html" class="whiteLink"><b>Learn 
+More</b></a></font></font> <!--<img border="0" src="images/1x1trans.gif" width="1" height="50">--> 
+</td></tr> </table></td></tr> </table><br> </td></tr> </table><!--***************************************************** //Featured Product ***************************************************--> 
+</td></tr> </table><BR> </td></tr> </table><!-- ********************************************* BOTTOM TABLE *******************************************--> 
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0> <TR> <TD><img border="0" src="images/1x1trans.gif" width="1" height="4"></TD></TR> 
+</TABLE><TABLE WIDTH=100% CELLPADDING=20 CELLSPACING=0> <TD bgcolor="4493E1" ALIGN=center><SPAN CLASS=finePrintWhite>Copyright 
+© 2004 Dommoni Corporation. All rights reserved.</SPAN> </TD></TABLE><br> <!-- ********************************************* //BOTTOM TABLE *******************************************--> 
+<map name="Map"> <area shape="rect" coords="31,35,239,91" href="index.html"> </map> 
+<!-- BEGIN WebSTAT Activation Code --> <script type="text/javascript" language="JavaScript" src="http://hv3.webstat.com/cgi-bin/wsv2.cgi?78286"></script> 
+<noscript> <a href="http://www.webstat.com"> <img src="http://hv3.webstat.com/scripts/wsb.php?ac=78286" border="0" alt="Site Counter and Website Statistics by WebSTAT" /></a> 
+</noscript> <!-- END WebSTAT Activation Code --> 
+</body>
+
